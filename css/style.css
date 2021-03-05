@@ -2490,7 +2490,7 @@ body.ie .ibg img {
 	}
 }
 .item-services__image_red::after {
-	background: rgba(255, 0, 0, 0.75);
+	background: rgba(255, 0, 0, 0.82);
 }
 @media (min-width: 991.98px) {
 	.item-services__image_red:hover::after {
