@@ -1659,7 +1659,7 @@ body.ie .ibg img {
 		width: 15px;
 		height: 14px;
 		-webkit-transform: translate(-50%, -50%);
-		    -ms-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
 		        transform: translate(-50%, -50%);
 		background: url("../img/icons/arrange.svg") 0 0 no-repeat;
 	}
