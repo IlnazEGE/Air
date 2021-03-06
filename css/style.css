@@ -1441,6 +1441,11 @@ body.ie .ibg img {
 	min-height: 90px;
 	margin: 0 auto 37px auto;
 }
+.advantages-services__image_20 {
+	-webkit-transform: translateY(8px);
+	    -ms-transform: translateY(8px);
+	        transform: translateY(8px);
+}
 @media (max-width: 991.98px) {
 	.advantages-services__image {
 		margin: 0 auto 25px auto;
@@ -1466,6 +1471,11 @@ body.ie .ibg img {
 		font-size: 25px;
 	}
 }
+@media (max-width: 479.98px) {
+	.advantages-services__subtitle {
+		font-size: 23px;
+	}
+}
 .advantages-services__text {
 	font-weight: 500;
 	font-size: 18px;
@@ -1482,7 +1492,7 @@ body.ie .ibg img {
 }
 @media (max-width: 479.98px) {
 	.advantages-services__text {
-		font-size: 15px;
+		font-size: 14px;
 	}
 }
 
@@ -1767,6 +1777,11 @@ body.ie .ibg img {
 		margin: 0px 0px 20px 0px;
 	}
 }
+@media (max-width: 479.98px) {
+	.bottom-delivery__item {
+		min-height: auto;
+	}
+}
 .bottom-delivery__row {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1795,7 +1810,12 @@ body.ie .ibg img {
 }
 @media (max-width: 1302px) {
 	.bottom-delivery__content {
-		margin: 0px 0px 30px 0px;
+		margin: 0px 0px 20px 0px;
+	}
+}
+@media (max-width: 479.98px) {
+	.bottom-delivery__content {
+		margin: 0px 0px 15px 0px;
 	}
 }
 .bottom-delivery .container {
@@ -1888,16 +1908,12 @@ body.ie .ibg img {
 @media (max-width: 991.98px) {
 	.bottom-delivery__image {
 		margin: 0px 0px 15px 0px;
-	}
-}
-@media (max-width: 991.98px) {
-	.bottom-delivery__image {
 		max-width: none;
 	}
 }
 @media (max-width: 479.98px) {
 	.bottom-delivery__image {
-		margin: 0 0 5px 0;
+		display: none;
 	}
 }
 .bottom-delivery__image_1 {
