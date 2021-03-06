@@ -1857,6 +1857,21 @@ body.ie .ibg img {
 }
 .bottom-delivery__image {
 	position: absolute;
+	overflow: hidden;
+}
+.bottom-delivery__image img {
+	-webkit-transition: -webkit-transform 1.2s;
+	transition: -webkit-transform 1.2s;
+	-o-transition: transform 1.2s;
+	transition: transform 1.2s;
+	transition: transform 1.2s, -webkit-transform 1.2s;
+}
+@media (min-width: 991.98px) {
+	.bottom-delivery__image:hover img {
+		-webkit-transform: scale(1.1);
+		    -ms-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
 }
 @media (max-width: 1302px) {
 	.bottom-delivery__image {
