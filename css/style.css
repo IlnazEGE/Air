@@ -1096,28 +1096,32 @@ body.ie .ibg img {
 	text-transform: uppercase;
 	color: #002445;
 	position: relative;
+	-webkit-transition-duration: 0.3s;
+	     -o-transition-duration: 0.3s;
+	        transition-duration: 0.3s;
 }
 @media (max-width: 767.98px) {
 	.left-hero-services__link {
 		display: inline-block;
 	}
 }
-@media (min-width: 991.98px) {
-	.left-hero-services__link:hover::after {
-		background: #002445;
-	}
-}
 .left-hero-services__link::after {
-	-webkit-transition: background 0.2s;
-	-o-transition: background 0.2s;
-	transition: background 0.2s;
 	content: "";
+	width: 0px;
+	height: 0px;
 	position: absolute;
-	bottom: 0;
+	bottom: 0px;
 	left: 0;
-	width: 98%;
-	height: 3px;
 	background: #ff0101;
+	-webkit-transition: width 0.3s;
+	-o-transition: width 0.3s;
+	transition: width 0.3s;
+}
+@media (min-width: 991.98px) {
+	.left-hero-services__link:hover:after {
+		height: 3px;
+		width: 98%;
+	}
 }
 .left-hero-services__row {
 	display: -webkit-box;
