@@ -142,7 +142,7 @@
 			<div class="header__right right-header">
 				<div class="right-header__column">
 					<div class="right-header__select select-right-header">
-						<select name="form[]" class="select-right-header__item" id="">
+						<select name="form[]" class="select-right-header__item">
 							<option value="1" selected="selected">Москва</option>
 							<option value="2">Якутск</option>
 							<option value="3">Новосибирск</option>
@@ -252,25 +252,23 @@
 								</div>
 								<div class="form-hero-services__row">
 									<div class="form-hero__item form-hero__item_col">
-										<label class="form-hero__label" for="form-hero__mass">Масса груза, кг</label>
-										<input id="form-hero__mass" autocomplete='off' type='text' name='form[]' data-value=''
+										<input autocomplete='off' type='text' name='form[]' data-value='Масса груза, кг'
 											class='input'>
 									</div>
 									<div class="form-hero__item form-hero__item_col">
-										<label class="form-hero__label" for="form-hero__size">Объем груза, м3</label>
-										<input id="form-hero__size" autocomplete='off' type='text' name='form[]' data-value=''
+										<input autocomplete='off' type='text' name='form[]' data-value='Объем груза, м3'
 											class='input'>
 									</div>
 								</div>
 								<div class="form-hero-services__row">
 									<div class="form-hero__item form-hero__item_col">
-										<input autocomplete='off' type='text' name='form[]' data-value='Длина' class='input'>
+										<input autocomplete='off' type='text' name='form[]' data-value='Длина, см' class='input'>
 									</div>
 									<div class="form-hero__item form-hero__item_col">
-										<input autocomplete='off' type='text' name='form[]' data-value='Ширина' class='input'>
+										<input autocomplete='off' type='text' name='form[]' data-value='Ширина, см' class='input'>
 									</div>
 									<div class="form-hero__item form-hero__item_col">
-										<input autocomplete='off' type='text' name='form[]' data-value='Высота' class='input'>
+										<input autocomplete='off' type='text' name='form[]' data-value='Высота, см' class='input'>
 									</div>
 								</div>
 								<button class="form-hero__btn btn">Рассчитать</button>
@@ -409,7 +407,7 @@
 									<th class="table-price__cell table-price__cell_bd-r">Кг</th>
 									<th class="table-price__cell">10,1-100 кг.</th>
 									<th class="table-price__cell">101-300 кг.</th>
-									<th class="table-price__cell table-price__cell_bd-r">301< кг.</th>
+									<th class="table-price__cell table-price__cell_bd-r">301 &lt; кг.</th>
 									<th class="table-price__cell table-price__cell_bg-3 ">0-1 кг.</th>
 									<th class="table-price__cell table-price__cell_bg-3">1,1-5 кг.</th>
 									<th class="table-price__cell table-price__cell_bg-3">5,1-10 кг.</th>
@@ -486,7 +484,7 @@
 						<div class="price__item item-price">
 							<table class="price__table table-price">
 
-								<div class="table-price__title title">Перевозки по Якутии</div>
+								<caption class="table-price__title title">Перевозки по Якутии</caption>
 								<tr class="table-price__row">
 									<th rowspan="2"
 										class="table-price__cell table-price__cell_bg-1 table-price__cell_bd-r table-price__cell_w">
