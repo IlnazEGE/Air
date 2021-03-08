@@ -1,8 +1,8 @@
-<svg width="26" height="31" viewBox="0 0 26 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="26" height="31" viewBox="0 0 26 31" fill="" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
 <path d="M25.5841 7.79205C25.5841 13.7351 18.7921 19.6781 18.7921 19.6781C18.7921 19.6781 12 13.7351 12 7.79205C12 4.04091 15.0409 1 18.7921 1C22.5432 1 25.5841 4.04091 25.5841 7.79205Z" fill="#0085FF"/>
 </g>
-<circle cx="18.7923" cy="7.79216" r="5.09404" fill="#002445"/>
+<circle cx="18.7923" cy="7.79216" r="5.09404" fill="#fff"/>
 <defs>
 <filter id="filter0_d" x="0" y="0" width="25.5841" height="30.6781" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>

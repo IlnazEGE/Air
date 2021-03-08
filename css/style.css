@@ -3750,6 +3750,7 @@ body.ie .ibg img {
   }
 }
 .text-block {
+  color: #002445;
   padding: 105px 0 102px 40px;
   background: url("../img/air-transportation/text-block/bg.jpg") 0 0/cover no-repeat;
   position: relative;
@@ -3902,13 +3903,13 @@ body.ie .ibg img {
 }
 @media (max-width: 991.98px) {
   .cities {
-    padding: 50px 0 160px 0;
+    padding: 50px 0 70px 0;
+    background: none;
   }
 }
 @media (max-width: 767.98px) {
   .cities {
     padding: 65px 0 40px 0;
-    background: none;
   }
 }
 @media (max-width: 479.98px) {
@@ -3981,7 +3982,7 @@ body.ie .ibg img {
     color: #0085ff;
   }
   .cities__link:hover::after {
-    background: url("../img/road-transportation/transport/loc-h.svg") 0 0 no-repeat;
+    background: url("../../img/road-transportation/transport/loc-h.svg") 0 0 no-repeat;
   }
 }
 .cities__link::after {
@@ -4789,16 +4790,16 @@ body.ie .ibg img {
 }
 
 .office {
-  padding: 104px 0 75px 0;
+  padding: 104px 0 55px 0;
 }
 @media (max-width: 1302px) {
   .office {
-    padding: 100px 0 60px 0;
+    padding: 100px 0 40px 0;
   }
 }
 @media (max-width: 991.98px) {
   .office {
-    padding: 60px 0 45px 0;
+    padding: 60px 0 35px 0;
   }
 }
 @media (max-width: 767.98px) {
@@ -4890,13 +4891,13 @@ body.ie .ibg img {
   }
 }
 .office__map {
-  height: 630px;
+  height: 555px;
   width: 100%;
   background: #444;
 }
 @media (max-width: 1302px) {
   .office__map {
-    height: 467px;
+    height: 440px;
   }
 }
 @media (max-width: 991.98px) {
@@ -4911,11 +4912,11 @@ body.ie .ibg img {
 }
 
 .delivery {
-  padding: 80px 0 10px 0;
+  padding: 50px 0 10px 0;
 }
 @media (max-width: 1302px) {
   .delivery {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 }
 @media (max-width: 991.98px) {
@@ -5290,4 +5291,526 @@ body.ie .ibg img {
   .way-services__link {
     font-size: 16px;
   }
+}
+
+.hero-about {
+  padding: 10px 0 0 0;
+  height: 812px;
+  background: url("../img/about/hero/BG.jpg") 0 0/cover no-repeat;
+}
+@media (max-width: 991.98px) {
+  .hero-about {
+    height: 700px;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-about {
+    height: 560px;
+  }
+}
+@media (max-width: 479.98px) {
+  .hero-about {
+    height: 520px;
+  }
+}
+.hero-about__breadcrubs {
+  margin: 0px 0px 0px 17px;
+}
+.hero-about__row {
+  display: flex;
+  position: relative;
+  margin: 250px 0px 0px 0px;
+}
+@media (max-width: 767.98px) {
+  .hero-about__row {
+    margin: 150px 0px 0px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .hero-about__row {
+    margin: 100px 0px 0px 0px;
+  }
+}
+.hero-about__left {
+  white-space: nowrap;
+  width: 400px;
+  bottom: 0;
+  left: 0;
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 120px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  transform: rotate(-90deg) translate(-140px, -52px);
+}
+@media (max-width: 1302px) {
+  .hero-about__left {
+    width: 300px;
+  }
+}
+@media (max-width: 991.98px) {
+  .hero-about__left {
+    display: none;
+  }
+}
+.hero-about__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 50px;
+  color: #01203d;
+  max-width: 790px;
+  font-family: Montserrat;
+}
+@media (max-width: 1302px) {
+  .hero-about__title {
+    max-width: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .hero-about__title {
+    text-align: center;
+    font-size: 22px;
+    line-height: 38px;
+  }
+}
+@media (max-width: 479.98px) {
+  .hero-about__title {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.text-block-about {
+  padding: 145px 0 220px 0;
+  background: url("../img/air-transportation/cities/bg.png") center no-repeat;
+}
+@media (max-width: 991.98px) {
+  .text-block-about {
+    padding: 100px 0 120px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .text-block-about {
+    background: none;
+    padding: 0;
+  }
+}
+.text-block-about__background {
+  background-color: rgba(229, 242, 255, 0.8);
+}
+.text-block-about__descr {
+  padding: 113px 0 116px 79px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #002445;
+}
+@media (max-width: 1302px) {
+  .text-block-about__descr {
+    padding: 113px 0 116px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .text-block-about__descr {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .text-block-about__descr {
+    padding: 30px 0;
+    font-size: 17px;
+  }
+}
+@media (max-width: 479.98px) {
+  .text-block-about__descr {
+    padding: 15px 0;
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+.advantages-slider {
+  background: url("../img/about/advantages-slider/bg.jpg") right bottom no-repeat;
+  padding: 99px 0 95px 0;
+}
+@media (max-width: 1302px) {
+  .advantages-slider {
+    padding: 90px 0;
+    background: none;
+  }
+}
+@media (max-width: 991.98px) {
+  .advantages-slider {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .advantages-slider {
+    padding: 30px 0 35px 0;
+  }
+}
+.advantages-slider__title {
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 120px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #a7c2db;
+  margin: 0px 0px 20px 0px;
+}
+@media (max-width: 991.98px) {
+  .advantages-slider__title {
+    font-size: 80px;
+    text-align: center;
+    line-height: normal;
+  }
+}
+@media (max-width: 767.98px) {
+  .advantages-slider__title {
+    font-size: 65px;
+    margin: 0px 0px 15px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .advantages-slider__title {
+    font-size: 50px;
+  }
+}
+.advantages-slider__pagination {
+  text-align: center;
+}
+.advantages-slider .swiper-pagination-bullet {
+  background: #a7c2db;
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  margin: 0 20px;
+}
+@media (max-width: 479.98px) {
+  .advantages-slider .swiper-pagination-bullet {
+    margin: 0 10px;
+    width: 18px;
+    height: 18px;
+  }
+}
+.advantages-slider .swiper-pagination-bullet-active {
+  background: #002445;
+  border-radius: none;
+}
+.advantages-slider .container {
+  max-width: 1130px;
+}
+@media (max-width: 1302px) {
+  .advantages-slider .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 991.98px) {
+  .advantages-slider .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  .advantages-slider .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+.advantages-slider .swiper-container {
+  margin: 0px 120px 0px 0px;
+}
+@media (max-width: 1302px) {
+  .advantages-slider .swiper-container {
+    margin: 0;
+  }
+}
+.advantages-slide__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 29px 0 0px 0;
+  margin: 0px 100px 0px 0px;
+}
+@media (max-width: 1302px) {
+  .advantages-slide__row {
+    margin: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .advantages-slide__row {
+    justify-content: center;
+    text-align: center;
+  }
+}
+.advantages-slide__small-icon {
+  margin: 0px 0px 62px 0px;
+}
+@media (max-width: 767.98px) {
+  .advantages-slide__small-icon {
+    margin: 0px 0px 40px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .advantages-slide__small-icon {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.advantages-slide__title {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #002c57;
+  margin: 0px 0px 23px 0px;
+}
+@media (max-width: 767.98px) {
+  .advantages-slide__title {
+    font-size: 26px;
+    line-height: normal;
+  }
+}
+@media (max-width: 479.98px) {
+  .advantages-slide__title {
+    font-size: 24px;
+  }
+}
+.advantages-slide__text {
+  max-width: 400px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  color: #002c57;
+}
+@media (max-width: 991.98px) {
+  .advantages-slide__text {
+    margin: 0px 0px 60px 0px;
+    max-width: 550px;
+  }
+}
+@media (max-width: 767.98px) {
+  .advantages-slide__text {
+    margin: 0px 0px 45px 0px;
+    font-size: 22px;
+    line-height: normal;
+  }
+}
+@media (max-width: 479.98px) {
+  .advantages-slide__text {
+    font-size: 20px;
+  }
+}
+.advantages-slide__image {
+  transform: translate(-30px, -30px);
+}
+@media (max-width: 991.98px) {
+  .advantages-slide__image {
+    display: none;
+  }
+}
+
+.destinations {
+  padding: 63px 0 89px 171px;
+  background: #e10000;
+  color: #fff;
+}
+@media (max-width: 1302px) {
+  .destinations {
+    padding: 63px 0 89px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .destinations {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .destinations {
+    padding: 30px 0;
+  }
+}
+.destinations__title {
+  color: #fff;
+  margin: 0px 0px 60px 0px;
+}
+@media (max-width: 991.98px) {
+  .destinations__title {
+    margin: 0px 0px 50px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .destinations__title {
+    margin: 0px 0px 30px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .destinations__title {
+    font-size: 30px;
+  }
+}
+.destinations__list li {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+@media (max-width: 767.98px) {
+  .destinations__list li {
+    font-size: 25px;
+  }
+}
+@media (max-width: 479.98px) {
+  .destinations__list li {
+    font-size: 22px;
+  }
+}
+.destinations__list li:not(:last-child) {
+  margin: 0px 0px 60px 0px;
+}
+@media (max-width: 991.98px) {
+  .destinations__list li:not(:last-child) {
+    margin: 0px 0px 45px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .destinations__list li:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.concept {
+  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #e5f3ff;
+  padding: 105px 0 72px 159px;
+}
+@media (max-width: 1302px) {
+  .concept {
+    padding: 105px 0 72px 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .concept {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .concept {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .concept {
+    padding: 25px 0;
+  }
+}
+.concept__title {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #002445;
+  margin: 0px 0px 34px 0px;
+}
+@media (max-width: 1302px) {
+  .concept__title {
+    max-width: 840px;
+  }
+}
+@media (max-width: 767.98px) {
+  .concept__title {
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 479.98px) {
+  .concept__title {
+    font-size: 25px;
+  }
+}
+.concept__title span {
+  margin: 0px 0px 0px 35px;
+  display: inline-block;
+}
+@media (max-width: 1302px) {
+  .concept__title span {
+    margin: 0;
+    display: inline;
+  }
+}
+.concept__row {
+  display: flex;
+}
+@media (max-width: 767.98px) {
+  .concept__row {
+    flex-direction: column;
+  }
+}
+.concept__column:first-child {
+  width: 480px;
+  margin: 0px 72px 0px 0px;
+}
+@media (max-width: 991.98px) {
+  .concept__column:first-child {
+    margin: 0px 40px 0px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .concept__column:first-child {
+    margin: 0px 0px 20px 0px;
+    width: auto;
+  }
+}
+.concept__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #002445;
+}
+@media (max-width: 479.98px) {
+  .concept__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+.concept__text_b {
+  margin: 0px 155px 0px 0px;
+}
+@media (max-width: 991.98px) {
+  .concept__text_b {
+    margin: 0;
+  }
+}
+.concept__list {
+  margin: 6px 0px 28px 0px;
+}
+@media (max-width: 767.98px) {
+  .concept__list {
+    margin: 0px 0px 28px 50px;
+  }
+}
+@media (max-width: 479.98px) {
+  .concept__list {
+    margin: 0 0 28px 0;
+  }
+}
+.concept__list li {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  color: #002445;
+  padding: 0px 0px 0px 31px;
+}
+.concept__list li:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+.concept__list li::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  width: 26px;
+  height: 31px;
+  background: url("../img/road-transportation/transport/loc.svg") 0 0 no-repeat;
 }

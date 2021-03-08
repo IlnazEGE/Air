@@ -901,30 +901,23 @@ const heroSlider = new Swiper('.slider-hero', {
 		prevEl: '.swiper-button-prev',
 	},
 });
+const advantagesSlider = new Swiper('.advantages-slider__slider', {
+	loop: true,
+	autoplay: {
+		delay: 3000,
+	},
+	pagination: {
+		el: '.pagination-advantages-slider',
+		clickable: true,
+	},
+});
 
 
 
 const arrowTop = document.querySelector('.arrow-top');
 const headerScroll = document.querySelector('.header-scroll');
-const scrollItems = document.querySelectorAll('.scroll-item');
-
-console.log(scrollItems);
-
-const scrollAnimation = () => {
-	let windowCenter = (window.innerHeight / 2) + window.scrollY;
-	scrollItems.forEach(el => {
-		let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
-		if (windowCenter >= scrollOffset) {
-			el.classList.add('animation-class');
-		} else {
-			el.classList.remove('animation-class');
-		}
-	});
-};
-
 window.addEventListener('scroll', () => {
 	headerScrollFunc();
-	scrollAnimation();
 	let scrollTop = window.scrollY;
 	if (scrollTop > 1400) {
 		arrowTop.style.display = "block";
@@ -943,9 +936,6 @@ function headerScrollFunc() {
 	}
 }
 headerScrollFunc();
-scrollAnimation();
-
-
 arrowTop.addEventListener("click", () => {
 	document.querySelector("body").scrollIntoView({
 		block: "center",
