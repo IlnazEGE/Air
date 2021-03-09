@@ -716,17 +716,17 @@ $(document).on('keydown', function (e) {
 	}
 });
 
-$('.goto').click(function () {
-	var el = $(this).attr('href').replace('#', '');
-	var offset = 0;
-	$('body,html').animate({ scrollTop: $('.' + el).offset().top + offset }, 500, function () { });
+// $('.goto').click(function () {
+// 	var el = $(this).attr('href').replace('#', '');
+// 	var offset = 0;
+// 	$('body,html').animate({ scrollTop: $('.' + el).offset().top + offset }, 500, function () { });
 
-	if ($('.menu__body').hasClass('active')) {
-		$('.menu__body,.icon-menu').removeClass('active');
-		$('body').removeClass('lock');
-	}
-	return false;
-});
+// 	if ($('.menu__body').hasClass('active')) {
+// 		$('.menu__body,.icon-menu').removeClass('active');
+// 		$('body').removeClass('lock');
+// 	}
+// 	return false;
+// });
 
 
 //Клик вне области
@@ -791,6 +791,31 @@ $('body').on('click', '.spoller', function (event) {
 });
 
 
+
+
+let tabBtn1 = document.querySelector("#tab-btn-1");
+let tabBtn2 = document.querySelector("#tab-btn-2");
+
+let tab1 = document.querySelector("#tab-1");
+let tab2 = document.querySelector("#tab-2");
+
+tabBtn1.addEventListener("click", () => {
+	if (!tab1.classList.contains("active")) {
+		tab1.classList.add("active");
+		tabBtn1.classList.add("active");
+		tabBtn2.classList.remove("active");
+		tab2.classList.remove("active");
+
+	}
+})
+tabBtn2.addEventListener("click", () => {
+	if (!tab2.classList.contains("active")) {
+		tab2.classList.add("active");
+		tabBtn2.classList.add("active");
+		tabBtn1.classList.remove("active");
+		tab1.classList.remove("active");
+	}
+})
 
 function scrolloptions() {
 	var scs = 100;
@@ -860,25 +885,25 @@ $('.whouse-content-body').scroll(function(event) {
 */
 
 
-if ($('.t,.tip').length > 0) {
-	tip();
-}
-function tip() {
-	$('.t,.tip').webuiPopover({
-		placement: 'top',
-		trigger: 'hover',
-		backdrop: false,
-		//selector:true,
-		animation: 'fade',
-		dismissible: true,
-		padding: false,
-		//hideEmpty: true
-		onShow: function ($element) { },
-		onHide: function ($element) { },
-	}).on('show.webui.popover hide.webui.popover', function (e) {
-		$(this).toggleClass('active');
-	});
-}
+// if ($('.t,.tip').length > 0) {
+// 	tip();
+// }
+// function tip() {
+// 	$('.t,.tip').webuiPopover({
+// 		placement: 'top',
+// 		trigger: 'hover',
+// 		backdrop: false,
+// 		//selector:true,
+// 		animation: 'fade',
+// 		dismissible: true,
+// 		padding: false,
+// 		//hideEmpty: true
+// 		onShow: function ($element) { },
+// 		onHide: function ($element) { },
+// 	}).on('show.webui.popover hide.webui.popover', function (e) {
+// 		$(this).toggleClass('active');
+// 	});
+// }
 
 
 
@@ -994,7 +1019,7 @@ ymaps.ready(function () {
 		});
 });
 
-console.log('помогите')
+
 function inputDefault() {
 	let inputFrom = document.querySelector("#input-from");
 	let inputTo = document.querySelector("#input-to");
@@ -1004,5 +1029,6 @@ function inputDefault() {
 }
 
 inputDefault();
+
 
 });
