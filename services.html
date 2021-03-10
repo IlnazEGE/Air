@@ -30,7 +30,7 @@
 							<li class="bottom-center-header"><a href="" class="bottom-center-header__link">О компании</a></li>
 							<li class="bottom-center-header"><span
 									class="bottom-center-header__link bottom-center-header__link_sub">Тарифы</span>
-								<div class="bottom-center-header__sub-menu sub-menu">
+								<div class="bottom-center-header__sub-menu sub-menu ">
 									<div class="sub-menu__body">
 										<div class="sub-menu__column">
 											<h2 class="sub-menu__title">АВИАПЕРЕВОЗКИ
@@ -179,6 +179,56 @@
 		</div>
 	</div>
 </div>		<main>
+			<div class="popup popup-callback">
+				<div class="popup-table table">
+					<div class="cell">
+						<div class="popup-content">
+							<div class="popup-close"></div>
+							<form action="#" class="popup-content__form">
+								<h2 class="popup-content__title title">Выберите интересующий вас способ перевозки</h2>
+								<div class="popup-content__text">
+									<p>Дополнительный сбор за опасный груз - 10 руб./кг</p>
+									<p>Стоимость авианакладной при перевозке пассажирскими рейсами - 650 руб.</p>
+								</div>
+								<div class="popup-content__row popup-content__row-checks">
+									<div class="check form-hero__check">
+										<input type="checkbox" value="1" name="form[]">АВИАПЕРЕВОЗКА
+										130 260 руб.
+									</div>
+									<div class="check form-hero__check">
+										<input type="checkbox" value="2" name="form[]">Ж/Д ПЕРЕВОЗКА
+										24 960 руб.
+									</div>
+									<div class="check form-hero__check">
+										<input type="checkbox" value="3" name="form[]">АВТОПЕРЕВОЗКА
+										33 600 руб.
+									</div>
+								</div>
+								<p class="popup-content__text popup-content__text_b">Внимание! Произведен ориентировочный расчет
+									стоимости доставки груза! Для
+									уточнения стоимости и помощи в оформлении заявки обратитесь к нам по номеру +7 (495)
+									988-57-76 или
+									заполните контактные данные и мы сразу свяжемся с Вами</p>
+								<div class="popup-content__row popup-content__row_inputs">
+									<div class="popup-content__row popup-content__item">
+										<input autocomplete='off' type='text' name='form[]' data-value='Как к Вам обратиться'
+											class='input'>
+									</div>
+									<div class="popup-content__row popup-content__item">
+										<input autocomplete='off' type='text' name='form[]' data-value='Ваш телефон'
+											class='input'>
+									</div>
+								</div>
+								<div class="popup-content__bottom">
+									<button class="popup-content__btn btn btn_b">Отправить</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 
 			<button class="arrow-top">
 				<svg width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -273,12 +323,7 @@
 										<input autocomplete='off' type='text' name='form[]' data-value='Высота, см' class='input'>
 									</div>
 								</div>
-								<button class="form-hero__btn btn">Рассчитать</button>
-								<div class="check form-hero__check"><input type="checkbox" checked value="1"
-										name="form[]">Нажимая на
-									кнопку, Вы
-									соглашаетесь с
-									политикой конфиденциальности</div>
+								<a href="#callback" class="form-hero__btn btn pl">Рассчитать</a>
 							</form>
 						</div>
 					</div>
@@ -475,7 +520,7 @@
 										<p>ОБРЕШЁТКА ГРУЗА ДОСКОЙ</p>
 									</div>
 									<div class="item-price__right">
-										<p><span>800 РУБ. ЗА 1 М3</span></p>
+										<p>800 РУБ. ЗА 1 М3</p>
 									</div>
 								</div>
 								<p class="item-price__text">
@@ -671,7 +716,7 @@
 								<input autocomplete='off' type='text' name='form[]' data-value='Телефон' class='input'>
 							</div>
 						</div>
-						<button class="form-application__btn btn btn_w">Отправить</button>
+						<a href="#aplicpopup" class="pl form-application__btn btn btn_w">Отправить</a>
 					</form>
 				</div>
 			</section>
@@ -682,12 +727,12 @@
 						<div class="office__column">
 							<h2 class="office__title title">Офис-склад в Москве</h2>
 							<address class="office__address">Рябиновая ул., д. 38Б, стр.5</address>
-							<div class="office__map" id="map" width="100%"></div>
+							<div class="office__map" id="map1" width="100%"></div>
 						</div>
 						<div class="office__column">
 							<h2 class="office__title title">Офис-склад в ЯКУТСКЕ</h2>
 							<address class="office__address">ул. Авиаторов, д. 94</address>
-							<div class="office__map" id="map" width="100%"></div>
+							<div class="office__map" id="map2" width="100%"></div>
 						</div>
 					</div>
 				</div>
@@ -875,7 +920,20 @@
 		</div>
 	</div>
 </footer>	</div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<div class="popup popup-aplicpopup">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup-content__text">
+					<h2 class="popup-content__title">Спасибо!</h2>
+					<h3 class="popup-content__sucs">Ваша заявка отправлена!</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4
 &lang=ru_RU" type="text/javascript">

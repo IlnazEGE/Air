@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Заявка</title>
+	<title>Контакты</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -192,232 +192,165 @@
 			</button>
 
 
-			<section class="applic">
+			<section class="contacts-page">
 				<div class='container'>
-					<div class="applic__top top-applic">
-						<h2 class="top-applic__title">ОФОРМИТЬ ЗАКАЗ</h2>
-						<p class="top-applic__text">Заполните форму необходимыми данными и отправьте. При возникновении
-							трудностей в заполнении заявки обратитесь к менеджеру информационно-справочной службы по телефону:
-							+7 (800) 100-58-97</p>
-					</div>
-					<div class="applic__bottom">
-						<div class="applic__tabs">
-							<button data-tabs-path="1" class="applic__item active">ЗАЯВКА НА ЭКСПЕДИРОВАНИЕ ГРУЗА</button>
-							<button data-tabs-path="2" class="applic__item">ЗАЯВКА НА ВЫПОЛНЕНИЕ ЧАРТЕРНОГО РЕЙСА</button>
+					<nav class="contacts-page__breadcrubs breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li>
+								<a href="" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li>
+								<span class="breadcrumbs__item">Контакты</span>
+							</li>
+						</ul>
+					</nav>
+					<h1 class="contacts-page__title title">Контакты</h1>
+					<div class="contacts-page__body body-contacts">
+						<div class="body-contacts__left left-body-contacts">
+							<div class="left-body-contacts__row">
+								<button data-tabs-path="1" class="left-body-contacts__tab active">Офис
+									склад в Москве</button>
+								<button data-tabs-path="2" class="left-body-contacts__tab">ПРЕДСТАВИТЕЛЬСТВО В АЭРОПОРТУ
+									«ВНУКОВО»</button>
+								<button data-tabs-path="3" class="left-body-contacts__tab">ОФИС-СКЛАД В ЯКУТСКЕ</button>
+								<button data-tabs-path="4" class="left-body-contacts__tab">ПРЕДСТАВИТЕЛЬСТВО В ПЕКИНЕ
+									(КНР)</button>
+							</div>
 						</div>
-						<form data-tabs-target="1" action="#" class="applic__form form-applic active">
-							<div class="form-applic__top top-form-applic">
-								<div class="top-form-applic__row">
-									<p class="top-form-applic__column">Сведения <br> об <span>ОТПРАВИТЕЛЕ</span></p>
-									<p class="top-form-applic__column">и <span>ПОЛУЧАТЕЛЕ</span></p>
-									<p class="top-form-applic__column">информация о <span>ГРУЗЕ</span></p>
-								</div>
-							</div>
-							<div class="form-applic__bottom bottom-form-applic">
-								<div class="bottom-form-applic__row">
-									<div class="bottom-form-applic__column">
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Отправитель &#9913'
-												class='input black'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]'
-												data-value='Город отправителя &#9913' class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='ИНН отправителя &#9913'
-												class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]'
-												data-value='Телефон отправителя &#9913' class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Контактное лицо &#9913'
-												class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]'
-												data-value='Адрес подачи машины &#9913' class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]'
-												data-value='№ заказа или счета &#9913' class='input'>
-										</div>
+						<div data-tabs-target="1" class="body-contacts__right right-body-contacts active">
+							<div class="right-body-contacts__top contacts-right-top">
+								<div class="contacts-right-top__row">
+									<div class="contacts-right-top__column">
+										<address class="contacts-right-top__address">Рябиновая ул., д. 38Б, стр.5 и</address>
+										<p class="contacts-right-top__text"><span>Внимание!</span> С 20.07.2020 Офис-склад в
+											Москве переехал по адресу: Рябиновая ул., д. 38Б, стр.5
+										</p>
 									</div>
-									<div class="bottom-form-applic__column">
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Получатель &#9913'
-												class='input black'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]'
-												data-value='Город получателя &#9913' class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='ИНН получателя &#9913'
-												class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]'
-												data-value='Телефон получателя &#9913' class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Контактное лицо &#9913'
-												class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Плательщик &#9913'
-												class='input black'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]'
-												data-value='Телефон плательщика &#9913' class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='ИНН плательщика &#9913'
-												class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]'
-												data-value='E-mail плательщика &#9913' class='input'>
-										</div>
-										<div class="check bottom-form-applic__check bottom-form-applic__check_width"><input
-												type="checkbox" checked value="1" name="form[]">Нажимая на
-											кнопку, Вы
-											соглашаетесь с
-											политикой конфиденциальности</div>
+									<div class="contacts-right-top__column">
+										<p class="contacts-right-top__text contacts-right-top__text_time">Режим работы: по будням
+											с 10:00 до 18:00 (без обеда) по Московскому времени
+										</p>
+										<a href="mailto:info@aircargo-msk.ru"
+											class="contacts-right-top__link contacts-right-top__link_mail">info@aircargo-msk.ru
+										</a>
 									</div>
-									<div class="bottom-form-applic__column">
-										<div class="bottom-form-applic__row bottom-form-applic__row_3 bottom-form-applic__item">
-											<div class="bottom-form-applic__check_3 check">
-												<input type="checkbox" value="1" name="form[]">Авиа
-											</div>
-											<div class="bottom-form-applic__check_3 check">
-												<input type="checkbox" value="1" name="form[]">Авто
-											</div>
-											<div class="bottom-form-applic__check_3 check">
-												<input type="checkbox" value="1" name="form[]">Ж/Д контейнер
-											</div>
+									<div class="contacts-right-top__column">
+										<div class="contacts-right-top__tels">
+											<a href="tel:+74959885776" class="contacts-right-top__link">+7 (495) 988-57-76</a>
+											<a href="tel:+78001005897" class="contacts-right-top__link">+7 (800) 100-58-97</a>
+											<a href="tel:+74112252398" class="contacts-right-top__link">+7 (4112) 25-23-98</a>
+											<p class="contacts-right-top__text">для звонков из Республики Саха (Якутия)</p>
 										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Откуда' class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Куда' class='input'>
-										</div>
-										<div class="bottom-form-applic__item bottom-form-applic__item_col">
-											<div class="bottom-form-applic__item bottom-form-applic__item_2">
-												<input autocomplete='off' type='text' name='form[]' data-value='Количество мест'
-													class='input'>
-											</div>
-											<div class="bottom-form-applic__item bottom-form-applic__item_2">
-												<input autocomplete='off' type='text' name='form[]' data-value='Общая масса'
-													class='input'>
-											</div>
-										</div>
-										<div class="bottom-form-applic__item bottom-form-applic__item_col">
-											<div
-												class="bottom-form-applic__item bottom-form-applic__item_icon-1 bottom-form-applic__item_3">
-												<input autocomplete='off' type='text' name='form[]' data-value='Длина, м'
-													class='input input_1'>
-											</div>
-											<div
-												class="bottom-form-applic__item bottom-form-applic__item_icon-2 bottom-form-applic__item_3">
-												<input autocomplete='off' type='text' name='form[]' data-value='Ширина, м'
-													class='input input_2'>
-											</div>
-											<div
-												class="bottom-form-applic__item bottom-form-applic__item_icon-3 bottom-form-applic__item_3">
-												<input autocomplete='off' type='text' name='form[]' data-value='Высота, м'
-													class='input input_3'>
-											</div>
-										</div>
-										<div class="bottom-form-applic__item bottom-form-applic__item_col">
-											<div class="bottom-form-applic__item_text bottom-form-applic__item_2">или</div>
-											<div
-												class="bottom-form-applic__item bottom-form-applic__item_icon-01 bottom-form-applic__item_big">
-												<input autocomplete='off' type='text' name='form[]' data-value='объём, м3'
-													class='input input_01'>
-											</div>
-										</div>
-										<div class="bottom-form-applic__item bottom-form-applic__item_area">
-											<textarea class="input" data-value='Характер груза' name="form[]"></textarea>
-										</div>
-										<div class="bottom-form-applic__item bottom-form-applic__item_area">
-											<textarea class="input" data-value='Примечание по грузу' name="form[]"></textarea>
-										</div>
-										<button class="bottom-form-applic__btn btn">Отправить запрос</button>
 									</div>
 								</div>
 							</div>
-						</form>
-						<form data-tabs-target="2" action="#" class="applic__form form-applic">
-							<div class="form-applic__top top-form-applic">
-								<div class="top-form-applic__row">
-									<p class="top-form-applic__column">Как мы можем с вами связаться?</p>
-									<p class="top-form-applic__column">Информация <span>о перевозке</span></p>
+							<div class="right-body-contacts__bottom contacts-right-bottom">
+								<div class="contacts-right-bottom__row">
+									<div class="contacts-right-bottom__map" id="map1"></div>
+									<div class="contacts-right-bottom__map" id="map2"></div>
 								</div>
 							</div>
-							<div class="form-applic__bottom bottom-form-applic">
-								<div class="bottom-form-applic__row">
-									<div class="bottom-form-applic__column">
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Имя &#9913'
-												class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Компания &#9913'
-												class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Телефон &#9913'
-												class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='E-mail &#9913'
-												class='input'>
-										</div>
+						</div>
+						<div data-tabs-target="2" class="body-contacts__right right-body-contacts">
+							<div class="right-body-contacts__top contacts-right-top">
+								<div class="contacts-right-top__row">
+									<div class="contacts-right-top__column">
+										<address class="contacts-right-top__address">Рябиновая ул., д. 38Б, стр.5 и</address>
+										<p class="contacts-right-top__text"><span>Внимание!</span> С 20.07.2020 Офис-склад в
+											Москве переехал по адресу: Рябиновая ул., д. 38Б, стр.5
+										</p>
 									</div>
-									<div class="bottom-form-applic__column">
-										<div class="bottom-form-applic__item bottom-form-applic__item_icon-01">
-											<input autocomplete='off' type='text' name='form[]' data-value='объём, м3 &#9913'
-												class='input input_01'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Общая масса &#9913'
-												class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Откуда &#9913'
-												class='input'>
-										</div>
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='text' name='form[]' data-value='Куда &#9913'
-												class='input'>
-										</div>
-										<div class="check bottom-form-applic__check bottom-form-applic__check_width"><input
-												type="checkbox" checked value="1" name="form[]">Нажимая на
-											кнопку, Вы
-											соглашаетесь с
-											политикой конфиденциальности</div>
+									<div class="contacts-right-top__column">
+										<p class="contacts-right-top__text contacts-right-top__text_time">Режим работы: по будням
+											с 10:00 до 18:00 (без обеда) по Московскому времени
+										</p>
+										<a href="mailto:info@aircargo-msk.ru"
+											class="contacts-right-top__link contacts-right-top__link_mail">info@aircargo-msk.ru
+										</a>
 									</div>
-									<div class="bottom-form-applic__column">
-										<div class="bottom-form-applic__item">
-											<input autocomplete='off' type='date' name='form[]' data-value='Дата &#9913'
-												class='input'>
+									<div class="contacts-right-top__column">
+										<div class="contacts-right-top__tels">
+											<a href="tel:+74959885776" class="contacts-right-top__link">+7 (495) 988-57-76</a>
+											<a href="tel:+78001005897" class="contacts-right-top__link">+7 (800) 100-58-97</a>
+											<a href="tel:+74112252398" class="contacts-right-top__link">+7 (4112) 25-23-98</a>
+											<p class="contacts-right-top__text">для звонков из Республики Саха (Якутия)</p>
 										</div>
-										<div class="bottom-form-applic__item bottom-form-applic__item_comment">
-											<textarea class="input" data-value='Примечание по грузу' name="form[]"></textarea>
-										</div>
-										<button class="bottom-form-applic__btn btn">Отправить запрос</button>
 									</div>
 								</div>
 							</div>
-						</form>
+							<div class="right-body-contacts__bottom contacts-right-bottom">
+								<div class="contacts-right-bottom__row">
+									<div class="contacts-right-bottom__map" id="map3"></div>
+									<div class="contacts-right-bottom__map" id="map4"></div>
+								</div>
+							</div>
+						</div>
+						<div data-tabs-target="3" class="body-contacts__right right-body-contacts">
+							<div class="right-body-contacts__top contacts-right-top">
+								<div class="contacts-right-top__row">
+									<div class="contacts-right-top__column">
+										<address class="contacts-right-top__address">Рябиновая ул., д. 38Б, стр.5 и</address>
+										<p class="contacts-right-top__text"><span>Внимание!</span> С 20.07.2020 Офис-склад в
+											Москве переехал по адресу: Рябиновая ул., д. 38Б, стр.5
+										</p>
+									</div>
+									<div class="contacts-right-top__column">
+										<p class="contacts-right-top__text contacts-right-top__text_time">Режим работы: по будням
+											с 10:00 до 18:00 (без обеда) по Московскому времени
+										</p>
+										<a href="mailto:info@aircargo-msk.ru"
+											class="contacts-right-top__link contacts-right-top__link_mail">info@aircargo-msk.ru
+										</a>
+									</div>
+									<div class="contacts-right-top__column">
+										<div class="contacts-right-top__tels">
+											<a href="tel:+74959885776" class="contacts-right-top__link">+7 (495) 988-57-76</a>
+											<a href="tel:+78001005897" class="contacts-right-top__link">+7 (800) 100-58-97</a>
+											<a href="tel:+74112252398" class="contacts-right-top__link">+7 (4112) 25-23-98</a>
+											<p class="contacts-right-top__text">для звонков из Республики Саха (Якутия)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="right-body-contacts__bottom contacts-right-bottom">
+								<div class="contacts-right-bottom__row">
+									<div class="contacts-right-bottom__map" id="map5"></div>
+									<div class="contacts-right-bottom__map" id="map6"></div>
+								</div>
+							</div>
+						</div>
+						<div data-tabs-target="4" class="body-contacts__right right-body-contacts">
+							<div class="right-body-contacts__top contacts-right-top">
+								<div class="contacts-right-top__row">
+									<div class="contacts-right-top__column">
+										<address class="contacts-right-top__address">Рябиновая ул., д. 38Б, стр.5 и</address>
+										<p class="contacts-right-top__text"><span>Внимание!</span> С 20.07.2020 Офис-склад в
+											Москве переехал по адресу: Рябиновая ул., д. 38Б, стр.5
+										</p>
+									</div>
+									<div class="contacts-right-top__column">
+										<p class="contacts-right-top__text contacts-right-top__text_time">Режим работы: по будням
+											с 10:00 до 18:00 (без обеда) по Московскому времени
+										</p>
+										<a href="mailto:info@aircargo-msk.ru"
+											class="contacts-right-top__link contacts-right-top__link_mail">info@aircargo-msk.ru
+										</a>
+									</div>
+									<div class="contacts-right-top__column">
+										<div class="contacts-right-top__tels">
+											<a href="tel:+74959885776" class="contacts-right-top__link">+7 (495) 988-57-76</a>
+											<a href="tel:+78001005897" class="contacts-right-top__link">+7 (800) 100-58-97</a>
+											<a href="tel:+74112252398" class="contacts-right-top__link">+7 (4112) 25-23-98</a>
+											<p class="contacts-right-top__text">для звонков из Республики Саха (Якутия)</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
+
 		</main>
 <footer class="footer">
 	<div class='container'>

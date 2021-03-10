@@ -618,9 +618,6 @@ function searchselectreset() {
 		}
 	});
 }
-// var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
-if (isMobile.any()) { }
-
 if (location.hash) {
 	var hsh = location.hash.replace('#', '');
 	if ($('.popup-' + hsh).length > 0) {
@@ -629,7 +626,6 @@ if (location.hash) {
 		$('body,html').animate({ scrollTop: $('div.' + hsh).offset().top, }, 500, function () { });
 	}
 }
-$('.wrapper').addClass('loaded');
 
 var act = "click";
 if (isMobile.iOS()) {
@@ -716,19 +712,6 @@ $(document).on('keydown', function (e) {
 	}
 });
 
-// $('.goto').click(function () {
-// 	var el = $(this).attr('href').replace('#', '');
-// 	var offset = 0;
-// 	$('body,html').animate({ scrollTop: $('.' + el).offset().top + offset }, 500, function () { });
-
-// 	if ($('.menu__body').hasClass('active')) {
-// 		$('.menu__body,.icon-menu').removeClass('active');
-// 		$('body').removeClass('lock');
-// 	}
-// 	return false;
-// });
-
-
 //Клик вне области
 $(document).on('click touchstart', function (e) {
 	if (!$(e.target).is(".select *")) {
@@ -736,176 +719,32 @@ $(document).on('click touchstart', function (e) {
 	};
 });
 
-//UP
-$(window).scroll(function () {
-	var w = $(window).width();
-	if ($(window).scrollTop() > 50) {
-		$('#up').fadeIn(300);
-	} else {
-		$('#up').fadeOut(300);
-	}
-});
-$('#up').click(function (event) {
-	$('body,html').animate({ scrollTop: 0 }, 300);
-});
 
-$('body').on('click', '.tab__navitem', function (event) {
-	var eq = $(this).index();
-	if ($(this).hasClass('parent')) {
-		var eq = $(this).parent().index();
-	}
-	if (!$(this).hasClass('active')) {
-		$(this).closest('.tabs').find('.tab__navitem').removeClass('active');
-		$(this).addClass('active');
-		$(this).closest('.tabs').find('.tab__item').removeClass('active').eq(eq).addClass('active');
-		if ($(this).closest('.tabs').find('.slick-slider').length > 0) {
-			$(this).closest('.tabs').find('.slick-slider').slick('setPosition');
+AOS.init();
+
+
+const tabs1 = document.querySelector('.applic__bottom');
+const tabsBtn1 = document.querySelectorAll('.applic__item');
+const tabsContent1 = document.querySelectorAll('.form-applic');
+
+
+if (tabs1) {
+	tabs1.addEventListener('click', e => {
+		if (e.target.classList.contains('applic__item')) {
+			const tabsPath = e.target.dataset.tabsPath;
+			tabsHandler1(tabsPath);
 		}
-	}
-});
-$.each($('.spoller.active'), function (index, val) {
-	$(this).next().show();
-});
-$('body').on('click', '.spoller', function (event) {
-	if ($(this).hasClass('mob') && !isMobile.any()) {
-		return false;
-	}
-
-	if ($(this).parents('.one').length > 0) {
-		$(this).parents('.one').find('.spoller').not($(this)).removeClass('active').next().slideUp(300);
-		$(this).parents('.one').find('.spoller').not($(this)).parent().removeClass('active');
-	}
-
-	if ($(this).hasClass('closeall') && !$(this).hasClass('active')) {
-		$.each($(this).closest('.spollers').find('.spoller'), function (index, val) {
-			$(this).removeClass('active');
-			$(this).next().slideUp(300);
-		});
-	}
-	$(this).toggleClass('active').next().slideToggle(300, function (index, val) {
-		if ($(this).parent().find('.slick-slider').length > 0) {
-			$(this).parent().find('.slick-slider').slick('setPosition');
-		}
-	});
-	return false;
-});
-
-
-
-
-let tabBtn1 = document.querySelector("#tab-btn-1");
-let tabBtn2 = document.querySelector("#tab-btn-2");
-
-let tab1 = document.querySelector("#tab-1");
-let tab2 = document.querySelector("#tab-2");
-
-tabBtn1.addEventListener("click", () => {
-	if (!tab1.classList.contains("active")) {
-		tab1.classList.add("active");
-		tabBtn1.classList.add("active");
-		tabBtn2.classList.remove("active");
-		tab2.classList.remove("active");
-
-	}
-})
-tabBtn2.addEventListener("click", () => {
-	if (!tab2.classList.contains("active")) {
-		tab2.classList.add("active");
-		tabBtn2.classList.add("active");
-		tabBtn1.classList.remove("active");
-		tab1.classList.remove("active");
-	}
-})
-
-function scrolloptions() {
-	var scs = 100;
-	var mss = 50;
-	var bns = false;
-	if (isMobile.any()) {
-		scs = 10;
-		mss = 1;
-		bns = true;
-	}
-	var opt = {
-		cursorcolor: "#fff",
-		cursorwidth: "4px",
-		background: "",
-		autohidemode: true,
-		cursoropacitymax: 0.4,
-		bouncescroll: bns,
-		cursorborderradius: "0px",
-		scrollspeed: scs,
-		mousescrollstep: mss,
-		directionlockdeadzone: 0,
-		cursorborder: "0px solid #fff",
-	};
-	return opt;
-}
-function scroll() {
-	$('.scroll-body').niceScroll('.scroll-list', scrolloptions());
-}
-if (navigator.appVersion.indexOf("Mac") != -1) {
-} else {
-	if ($('.scroll-body').length > 0) { scroll(); }
+	})
 }
 
-/*
-function scrollwhouse(){
-		var scs=100;
-		var mss=50;
-		var bns=false;
-	if(isMobile.any()){
-		scs=10;
-		mss=1;
-		bns=true;
-	}
-	var opt={
-		cursorcolor:"#afafaf",
-		cursorwidth: "5px",
-		background: "",
-		autohidemode:false,
-		railalign: 'left',
-		cursoropacitymax: 1,
-		bouncescroll:bns,
-		cursorborderradius: "0px",
-		scrollspeed:scs,
-		mousescrollstep:mss,
-		directionlockdeadzone:0,
-		cursorborder: "0px solid #fff",
-	};
-	return opt;
-}
-$('.whouse-content-body').niceScroll('.whouse-content-scroll',scrollwhouse());
-$('.whouse-content-body').scroll(function(event) {
-		var s=$(this).scrollTop();
-		var r=Math.abs($(this).outerHeight()-$('.whouse-content-scroll').outerHeight());
-		var p=s/r*100;
-	$('.whouse-content__shadow').css({opacity:1-1/100*p});
-});
-*/
+const tabsHandler1 = (path) => {
+	tabsBtn1.forEach(el => { el.classList.remove('active') });
+	document.querySelector(`[data-tabs-path="${path}"]`).classList.add('active');
 
+	tabsContent1.forEach(el => { el.classList.remove('active') });
+	document.querySelector(`[data-tabs-target="${path}"]`).classList.add('active');
 
-// if ($('.t,.tip').length > 0) {
-// 	tip();
-// }
-// function tip() {
-// 	$('.t,.tip').webuiPopover({
-// 		placement: 'top',
-// 		trigger: 'hover',
-// 		backdrop: false,
-// 		//selector:true,
-// 		animation: 'fade',
-// 		dismissible: true,
-// 		padding: false,
-// 		//hideEmpty: true
-// 		onShow: function ($element) { },
-// 		onHide: function ($element) { },
-// 	}).on('show.webui.popover hide.webui.popover', function (e) {
-// 		$(this).toggleClass('active');
-// 	});
-// }
-
-
+};
 
 
 const heroSlider = new Swiper('.slider-hero', {
@@ -917,15 +756,12 @@ const heroSlider = new Swiper('.slider-hero', {
 		el: '.swiper-pagination',
 		clickable: true,
 	},
-	// breakpoints: {
-	// 	992: {
-	// 	}
-	// }
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
 });
+
 const advantagesSlider = new Swiper('.advantages-slider__slider', {
 	loop: true,
 	autoplay: {
@@ -941,13 +777,21 @@ const advantagesSlider = new Swiper('.advantages-slider__slider', {
 
 const arrowTop = document.querySelector('.arrow-top');
 const headerScroll = document.querySelector('.header-scroll');
+
+arrowTop.addEventListener("click", () => {
+	document.querySelector("body").scrollIntoView({
+		block: "center",
+		behavior: "smooth",
+	});
+});
+
 window.addEventListener('scroll', () => {
 	headerScrollFunc();
 	let scrollTop = window.scrollY;
 	if (scrollTop > 1400) {
 		arrowTop.style.display = "block";
 	} else {
-		arrowTop.style.display = "none";
+		arrowTop.style.display = "None";
 	}
 });
 
@@ -960,75 +804,111 @@ function headerScrollFunc() {
 		headerScroll.style.display = "none";
 	}
 }
+
 headerScrollFunc();
-arrowTop.addEventListener("click", () => {
-	document.querySelector("body").scrollIntoView({
-		block: "center",
-		behavior: "smooth"
-	});
-});
 
-ymaps.ready(function () {
-	var myMap = new ymaps.Map('map', {
-		center: [55.751574, 37.573856],
-		zoom: 9
-	}, {
-		searchControlProvider: 'yandex#search'
-	}),
-
-		// Создаём макет содержимого.
-		MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-			'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-		),
-
-		myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-			hintContent: 'Собственный значок метки',
-			balloonContent: 'Это красивая метка'
+if (document.querySelector('#map')) {
+	ymaps.ready(function () {
+		var myMap = new ymaps.Map('map', {
+			center: [55.751574, 37.573856],
+			zoom: 9
 		}, {
-			// Опции.
-			// Необходимо указать данный тип макета.
-			iconLayout: 'default#image',
-			// Своё изображение иконки метки.
-			iconImageHref: 'images/myIcon.gif',
-			// Размеры метки.
-			iconImageSize: [30, 42],
-			// Смещение левого верхнего угла иконки относительно
-			// её "ножки" (точки привязки).
-			iconImageOffset: [-5, -38]
+			searchControlProvider: 'yandex#search'
 		}),
 
-		myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-			hintContent: 'Собственный значок метки с контентом',
-			balloonContent: 'А эта — новогодняя',
-			iconContent: '12'
-		}, {
-			// Опции.
-			// Необходимо указать данный тип макета.
-			iconLayout: 'default#imageWithContent',
-			// Своё изображение иконки метки.
-			iconImageHref: 'images/ball.png',
-			// Размеры метки.
-			iconImageSize: [48, 48],
-			// Смещение левого верхнего угла иконки относительно
-			// её "ножки" (точки привязки).
-			iconImageOffset: [-24, -24],
-			// Смещение слоя с содержимым относительно слоя с картинкой.
-			iconContentOffset: [15, 15],
-			// Макет содержимого.
-			iconContentLayout: MyIconContentLayout
-		});
-});
+			// Создаём макет содержимого.
+			MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+				'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+			),
+
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				hintContent: 'Собственный значок метки',
+				balloonContent: 'Это красивая метка'
+			}, {
+				// Опции.
+				// Необходимо указать данный тип макета.
+				iconLayout: 'default#image',
+				// Своё изображение иконки метки.
+				iconImageHref: 'images/myIcon.gif',
+				// Размеры метки.
+				iconImageSize: [30, 42],
+				// Смещение левого верхнего угла иконки относительно
+				// её "ножки" (точки привязки).
+				iconImageOffset: [-5, -38]
+			}),
+
+			myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+				hintContent: 'Собственный значок метки с контентом',
+				balloonContent: 'А эта — новогодняя',
+				iconContent: '12'
+			}, {
+				// Опции.
+				// Необходимо указать данный тип макета.
+				iconLayout: 'default#imageWithContent',
+				// Своё изображение иконки метки.
+				iconImageHref: 'images/ball.png',
+				// Размеры метки.
+				iconImageSize: [48, 48],
+				// Смещение левого верхнего угла иконки относительно
+				// её "ножки" (точки привязки).
+				iconImageOffset: [-24, -24],
+				// Смещение слоя с содержимым относительно слоя с картинкой.
+				iconContentOffset: [15, 15],
+				// Макет содержимого.
+				iconContentLayout: MyIconContentLayout
+			});
+	});
+}
+
+let inputFrom = document.querySelector("#input-from");
+let inputTo = document.querySelector("#input-to");
+
+if (inputFrom || inputTo) {
+	inputDefault();
+}
 
 
 function inputDefault() {
-	let inputFrom = document.querySelector("#input-from");
-	let inputTo = document.querySelector("#input-to");
-
 	inputFrom.value = "Москва";
 	inputTo.value = "Якутск";
 }
 
-inputDefault();
 
+const tabs = document.querySelector('.body-contacts');
+const tabsBtn = document.querySelectorAll('.left-body-contacts__tab');
+const tabsContent = document.querySelectorAll('.body-contacts__right');
+
+
+if (tabs) {
+	tabs.addEventListener('click', e => {
+		if (e.target.classList.contains('left-body-contacts__tab')) {
+			const tabsPath = e.target.dataset.tabsPath;
+			tabsHandler(tabsPath);
+		}
+	})
+}
+
+const tabsHandler = (path) => {
+	tabsBtn.forEach(el => { el.classList.remove('active') });
+	document.querySelector(`[data-tabs-path="${path}"]`).classList.add('active');
+
+	tabsContent.forEach(el => { el.classList.remove('active') });
+	document.querySelector(`[data-tabs-target="${path}"]`).classList.add('active');
+
+};
+
+const menu = document.querySelector(".bottom-center-header__list");
+
+menu.addEventListener('click', (e) => {
+	if (e.target.nextElementSibling.classList.contains("sub-menu")) {
+		if (e.target.nextElementSibling.classList.contains("active")) {
+			e.target.nextElementSibling.classList.remove("active");
+			e.target.nextElementSibling.style.display = "None";
+		} else {
+			e.target.nextElementSibling.classList.add("active");
+			e.target.nextElementSibling.style.display = "block";
+		}
+	}
+})
 
 });
