@@ -16,7 +16,7 @@
 <header class="header">
 	<div class="container">
 		<div class="header__row">
-			<a href="" class="header__logo"><img src="img/logo.png" alt=""></a>
+			<a href="" class="header__logo"><img src="img/logo.svg" alt=""></a>
 			<div class="header__center center-header">
 				<div class="center-header__top top-center-header">
 					<div class="top-center-header__row">
@@ -131,6 +131,17 @@
 							<li class="bottom-center-header"><a href="" class="bottom-center-header__link">Новости</a></li>
 							<li class="bottom-center-header"><a href="" class="bottom-center-header__link">Контакты</a></li>
 						</ul>
+						<div class="mob-contacts">
+							<ul class="mob-contacts__list">
+								<li><a href="tel:+74959885776" class="mob-contacts__link">+7 (495)
+										988-57-76</a></li>
+								<li><a href="tel:+78001005897" class="mob-contacts__link">+7 (800)
+										100-58-97</a></li>
+								<li><a href="mailto:info@aircargo-msk.ru" class="mob-contacts__link">
+										info@aircargo-msk.ru
+									</a></li>
+							</ul>
+						</div>
 					</nav>
 					<div class='bottom-center-header__icon'>
 						<span></span>
@@ -164,7 +175,7 @@
 	<div class='container'>
 		<div class="header-scroll__row">
 			<a href="" class="header-scroll__logo">
-				<img src="img/logo.png" alt="">
+				<img src="img/logo.svg" alt="">
 			</a>
 			<div class="header-scroll__middle middle-header-scroll">
 				<div class="middle-header-scroll__row">
@@ -448,10 +459,14 @@
 								<input autocomplete='off' type='text' name='form[]' data-value='Имя' class='input'>
 							</div>
 							<div class="form-application__item">
-								<input autocomplete='off' type='text' name='form[]' data-value='Телефон' class='input'>
+								<input autocomplete='off' type='text' name='form[]' data-value='Телефон' class='phone input'>
 							</div>
 						</div>
-						<button class="form-application__btn btn btn_w">Отправить</button>
+						<a href="#aplicpopup" class="pl form-application__btn btn btn_w">Отправить</a>
+						<div class="application__ch">Нажимая на
+							кнопку, Вы
+							соглашаетесь с
+							политикой конфиденциальности</div>
 					</form>
 				</div>
 			</section>
@@ -657,7 +672,7 @@
 		<div class="footer__row">
 			<div class="footer__column-one column-one-footer">
 				<a href="" class="column-one-footer__logo">
-					<img src="img/logo.png" alt="">
+					<img src="img/logo.svg" alt="">
 				</a>
 				<span class="column-one-footer__code">Код в ATI 2233025</span>
 				<div class="column-one-footer__icon">
@@ -701,7 +716,21 @@
 		</div>
 	</div>
 </footer>	</div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<div class="popup popup-aplicpopup">
+	<div class="popup-table table">
+		<div class="cell">
+			<div class="popup-content">
+				<div class="popup-close"></div>
+				<div class="popup-content__text">
+					<h2 class="popup-content__title">Спасибо!</h2>
+					<h3 class="popup-content__sucs">Ваша заявка отправлена!</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://rawgit.com/RobinHerbots/Inputmask/4.x/dist/jquery.inputmask.bundle.js"></script>
+<input id="test1">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=51092280-e018-4241-bc97-180570de25d4

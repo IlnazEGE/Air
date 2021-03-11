@@ -900,7 +900,7 @@ const tabsHandler = (path) => {
 const menu = document.querySelector(".bottom-center-header__list");
 
 menu.addEventListener('click', (e) => {
-	if (e.target.nextElementSibling.classList.contains("sub-menu")) {
+	if (window.innerWidth < 992 && e.target.nextElementSibling.classList.contains("sub-menu")) {
 		if (e.target.nextElementSibling.classList.contains("active")) {
 			e.target.nextElementSibling.classList.remove("active");
 			e.target.nextElementSibling.style.display = "None";
@@ -909,6 +909,5 @@ menu.addEventListener('click', (e) => {
 			e.target.nextElementSibling.style.display = "block";
 		}
 	}
-})
-
+});
 });
