@@ -4,7 +4,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeueBold.eot");
-  src: local("☺"), url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg") format("svg");
+  src: local("☺"), url("../fonts/BebasNeueBold.woff") format("woff"),
+    url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -534,7 +535,8 @@ textarea.input {
     padding: 15px 12px;
   }
 }
-.popup-callback .popup-content__ch {
+.popup-callback .popup-content__ch,
+.popup-callback .popup-content__ch a {
   font-size: 14px;
   line-height: 17px;
   color: #002445;
@@ -986,7 +988,7 @@ textarea.input {
     left: 0;
   }
 }
-@media (max-height: 450px) {
+@media (max-height: 450px) and (max-width: 991.98px) {
   .bottom-center-header__menu {
     padding: 25px 25px 135px 25px;
   }
@@ -1802,13 +1804,13 @@ textarea.input {
 }
 @media (max-width: 1302px) {
   .hero .swiper-button-prev,
-.hero .swiper-button-next {
+  .hero .swiper-button-next {
     top: 90%;
   }
 }
 @media (max-width: 991.98px) {
   .hero .swiper-button-prev,
-.hero .swiper-button-next {
+  .hero .swiper-button-next {
     display: none;
   }
 }
@@ -1845,7 +1847,7 @@ textarea.input {
   background: url("../img/icons/slider-arrow-l-h.svg") 0 0 no-repeat;
 }
 .hero .swiper-slide {
-  background: url("../img/index/hero/BG.jpg") 0 0/cover no-repeat;
+  background: url("../img/index/hero/BG.jpg") 0 0 / cover no-repeat;
   padding: 90px 0 50px 0;
   min-height: 700px;
 }
@@ -2145,11 +2147,11 @@ textarea.input {
 }
 
 .services {
-  padding: 30px 0 50px 0;
+  padding: 30px 0 30px 0;
 }
 @media (max-width: 991.98px) {
   .services {
-    padding: 320px 0 35px 0;
+    padding: 320px 0 25px 0;
   }
 }
 @media (max-width: 767.98px) {
@@ -2159,7 +2161,7 @@ textarea.input {
 }
 @media (max-width: 479.98px) {
   .services {
-    padding: 320px 0 10px 0;
+    padding: 320px 0 15px 0;
   }
 }
 .services__row {
@@ -2326,6 +2328,12 @@ textarea.input {
 .item-services__text a:not(:last-child) {
   margin: 0px 0px 5px 0px;
 }
+@media (min-width: 991.98px) {
+  .item-services__text p:hover,
+  .item-services__text a:hover {
+    color: #e10000;
+  }
+}
 .item-services__arrow {
   position: absolute;
   bottom: 33px;
@@ -2345,21 +2353,21 @@ textarea.input {
 
 .advantages {
   background: url("../img/index/advantages/bg.jpg") bottom left/cover no-repeat;
-  padding: 70px 0 0 0;
+  padding: 30px 0 0 0;
 }
 @media (max-width: 991.98px) {
   .advantages {
-    padding: 60px 0 0 0;
+    padding: 25px 0 0 0;
   }
 }
 @media (max-width: 767.98px) {
   .advantages {
-    padding: 35px 0 0 0;
+    padding: 15px 0 0 0;
   }
 }
 @media (max-width: 479.98px) {
   .advantages {
-    padding: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
   }
 }
 .advantages__title {
@@ -2490,6 +2498,9 @@ textarea.input {
   .application__title {
     margin: 0px 0px 10px 0px;
   }
+}
+.application__ch a {
+  color: #ffffff;
 }
 @media (max-width: 479.98px) {
   .application__ch {
@@ -2985,7 +2996,7 @@ textarea.input {
 .hero-road {
   padding: 10px 0;
   height: 660px;
-  background: url("../img/road-transportation/hero/bg.jpg") 0 0/cover no-repeat;
+  background: url("../img/road-transportation/hero/bg.jpg") 0 0 / cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-road {
@@ -3490,13 +3501,13 @@ textarea.input {
 }
 
 .advantages_road-transportation {
-  background: url("../../img/road-transportation/advantages/bg.jpg") 0 0/cover no-repeat;
+  background: url("../../img/road-transportation/advantages/bg.jpg") 0 0 / cover no-repeat;
 }
 
 .hero-air {
   padding: 10px 0;
   height: 660px;
-  background: url("../img/air-transportation/hero/bg.jpg") 0 0/cover no-repeat;
+  background: url("../img/air-transportation/hero/bg.jpg") 0 0 / cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-air {
@@ -3561,36 +3572,6 @@ textarea.input {
     font-size: 42px;
     line-height: 44px;
     margin: 17px 0px 0px 0px;
-  }
-}
-.left-hero-air__btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #ffffff;
-  display: inline-block;
-  margin: 100px 0px 0px 0px;
-  padding: 19px 56px;
-}
-@media (min-width: 991.98px) {
-  .left-hero-air__btn {
-    transition: box-shadow 0.2s ease-in;
-  }
-  .left-hero-air__btn:hover {
-    box-shadow: inset 30vw 0 0 #d0283a;
-  }
-}
-@media (max-width: 767.98px) {
-  .left-hero-air__btn {
-    margin: 60px 0px 0px 0px;
-  }
-}
-@media (max-width: 400px) {
-  .left-hero-air__btn {
-    width: 100%;
-    padding: 19px 20px;
   }
 }
 .left-hero-air__subtitle {
@@ -3696,7 +3677,7 @@ textarea.input {
 .text-block {
   color: #002445;
   padding: 105px 0 102px 40px;
-  background: url("../img/air-transportation/text-block/bg.jpg") 0 0/cover no-repeat fixed;
+  background: url("../img/air-transportation/text-block/bg.jpg") 0 0 / cover no-repeat fixed;
   position: relative;
 }
 @media (max-width: 1302px) {
@@ -3707,7 +3688,7 @@ textarea.input {
 @media (max-width: 991.98px) {
   .text-block {
     padding: 65px 0 65px 0;
-    margin: 310px 0px 0px 0px;
+    margin: 170px 0px 0px 0px;
   }
 }
 @media (max-width: 767.98px) {
@@ -3718,7 +3699,7 @@ textarea.input {
 @media (max-width: 479.98px) {
   .text-block {
     padding: 30px 0;
-    margin: 270px 0px 0px 0px;
+    margin: 160px 0px 0px 0px;
   }
 }
 .text-block::after {
@@ -3838,7 +3819,7 @@ textarea.input {
 
 .cities {
   padding: 10px 0 240px 0;
-  background: url("../img/air-transportation/cities/bg.png") center no-repeat;
+  background: url("../img/air-transportation/cities/bg.png") center no-repeat fixed;
 }
 @media (max-width: 1302px) {
   .cities {
@@ -3947,7 +3928,7 @@ textarea.input {
 .hero-services {
   padding: 50px 0;
   height: 660px;
-  background: url("../img/services/hero/BG.jpg") 0 0/cover no-repeat;
+  background: url("../img/services/hero/BG.jpg") 0 0 / cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-services {
@@ -5240,7 +5221,7 @@ textarea.input {
 .hero-about {
   padding: 10px 0 0 0;
   height: 812px;
-  background: url("../img/about/hero/BG.jpg") 0 0/cover no-repeat;
+  background: url("../img/about/hero/BG.jpg") 0 0 / cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-about {
@@ -5593,20 +5574,21 @@ textarea.input {
     font-size: 30px;
   }
 }
-.destinations__list li {
+.destinations__list li a {
   font-family: "Bebas Neue";
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1.5px;
+  color: #fff;
 }
 @media (max-width: 767.98px) {
-  .destinations__list li {
+  .destinations__list li a {
     font-size: 25px;
   }
 }
 @media (max-width: 479.98px) {
-  .destinations__list li {
-    font-size: 22px;
+  .destinations__list li a {
+    font-size: 21px;
   }
 }
 .destinations__list li:not(:last-child) {
@@ -6195,6 +6177,9 @@ textarea.input {
 .bottom-form-applic__check_3 {
   flex: 0 1 33.333%;
   text-align: left;
+  display: flex;
+  line-height: 15px;
+  transform: translateY(5px);
 }
 @media (max-width: 991.98px) {
   .bottom-form-applic__check_3 {
@@ -6207,6 +6192,7 @@ textarea.input {
   }
 }
 .bottom-form-applic__check_3:before {
+  top: -5px;
   width: 30px;
   height: 30px;
   border: 1px solid #a7c2db;
@@ -6290,11 +6276,15 @@ textarea.input {
 .bottom-form-applic .input_001 {
   padding: 11.5px 15px 11.5px 45px;
 }
-.bottom-form-applic .input_1, .bottom-form-applic .input_2, .bottom-form-applic .input_3 {
+.bottom-form-applic .input_1,
+.bottom-form-applic .input_2,
+.bottom-form-applic .input_3 {
   padding: 11.5px 15px 11.5px 37px;
 }
 @media (max-width: 991.98px) {
-  .bottom-form-applic .input_1, .bottom-form-applic .input_2, .bottom-form-applic .input_3 {
+  .bottom-form-applic .input_1,
+  .bottom-form-applic .input_2,
+  .bottom-form-applic .input_3 {
     padding: 11.5px 15px 11.5px 45px;
   }
 }
@@ -6943,7 +6933,7 @@ textarea.input {
 .track-page {
   padding: 24px 0 50px 0;
   min-height: 580px;
-  background: url("../img/track/bg.jpg") 0 0/cover no-repeat;
+  background: url("../img/track/bg.jpg") 0 0 / cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .track-page {
@@ -7074,7 +7064,7 @@ textarea.input {
 .contacts-page {
   min-height: 680px;
   padding: 11px 0 0 0;
-  background: url("../img/contacts/BG.jpg") 0 0/cover no-repeat;
+  background: url("../img/contacts/BG.jpg") 0 0 / cover no-repeat;
 }
 @media (max-width: 767.98px) {
   .contacts-page {
