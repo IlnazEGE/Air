@@ -4,8 +4,7 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeueBold.eot");
-  src: local("☺"), url("../fonts/BebasNeueBold.woff") format("woff"),
-    url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg") format("svg");
+  src: local("☺"), url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -203,8 +202,15 @@ body.lock {
   letter-spacing: 5px;
   text-transform: uppercase;
   font-weight: 700;
+  border: 1px solid #fff;
   color: #002c57;
-  background: #fff;
+  color: #fff;
+}
+@media (max-width: 479.98px) {
+  .btn_w {
+    width: 100%;
+    padding: 21px 0;
+  }
 }
 @media (min-width: 991.98px) {
   .btn_w {
@@ -212,12 +218,6 @@ body.lock {
   }
   .btn_w:hover {
     box-shadow: inset 45vw 0 0 #a7c2db;
-  }
-}
-@media (max-width: 479.98px) {
-  .btn_w {
-    width: 100%;
-    padding: 21px 0;
   }
 }
 .btn.fw {
@@ -362,7 +362,7 @@ textarea.input {
 }
 @media (max-width: 479.98px) {
   .title {
-    font-size: 34px;
+    font-size: 30px;
   }
 }
 
@@ -535,8 +535,7 @@ textarea.input {
     padding: 15px 12px;
   }
 }
-.popup-callback .popup-content__ch,
-.popup-callback .popup-content__ch a {
+.popup-callback .popup-content__ch, .popup-callback .popup-content__ch a {
   font-size: 14px;
   line-height: 17px;
   color: #002445;
@@ -1107,6 +1106,12 @@ textarea.input {
 .bottom-center-header__link_sub {
   cursor: pointer;
   position: relative;
+}
+.bottom-center-header__link_sub.active {
+  color: #e10000;
+}
+.bottom-center-header__link_sub.active::after {
+  transform: rotate(180deg);
 }
 @media (min-width: 991.98px) {
   .bottom-center-header__link_sub:hover::after {
@@ -1804,13 +1809,13 @@ textarea.input {
 }
 @media (max-width: 1302px) {
   .hero .swiper-button-prev,
-  .hero .swiper-button-next {
+.hero .swiper-button-next {
     top: 90%;
   }
 }
 @media (max-width: 991.98px) {
   .hero .swiper-button-prev,
-  .hero .swiper-button-next {
+.hero .swiper-button-next {
     display: none;
   }
 }
@@ -1847,7 +1852,7 @@ textarea.input {
   background: url("../img/icons/slider-arrow-l-h.svg") 0 0 no-repeat;
 }
 .hero .swiper-slide {
-  background: url("../img/index/hero/BG.jpg") 0 0 / cover no-repeat;
+  background: url("../img/index/hero/BG.jpg") 0 0/cover no-repeat;
   padding: 90px 0 50px 0;
   min-height: 700px;
 }
@@ -2104,7 +2109,6 @@ textarea.input {
 .form-hero__btn {
   font-weight: 700;
   font-size: 16px;
-  background: #02549e;
   width: 100%;
   padding: 20px 0;
   line-height: 20px;
@@ -2113,6 +2117,7 @@ textarea.input {
   color: #ffffff;
   margin: 18px 0px;
   text-align: center;
+  background: #02549e;
   transition: box-shadow 0.2s ease-in;
 }
 @media (max-width: 479.98px) {
@@ -2266,7 +2271,7 @@ textarea.input {
   }
 }
 .item-services__image_red::after {
-  background: rgba(255, 0, 0, 0.8);
+  background: rgba(255, 0, 0, 0.7);
 }
 @media (min-width: 991.98px) {
   .item-services__image_red:hover::after {
@@ -2330,7 +2335,7 @@ textarea.input {
 }
 @media (min-width: 991.98px) {
   .item-services__text p:hover,
-  .item-services__text a:hover {
+.item-services__text a:hover {
     color: #e10000;
   }
 }
@@ -2590,6 +2595,11 @@ textarea.input {
     margin: 0px 0px 20px 0px;
   }
 }
+@media (max-width: 479.98px) {
+  .about__title {
+    display: none;
+  }
+}
 .about__text {
   max-width: 740px;
   font-weight: 500;
@@ -2739,8 +2749,11 @@ textarea.input {
   }
 }
 
-.news {
+.bg {
   background: linear-gradient(180deg, #e5f2ff 58.29%, rgba(237, 246, 255, 0.695973) 75.61%, #ffffff 100%), #f3f9ff;
+}
+
+.news {
   padding: 100px 0 50px 0;
 }
 @media (max-width: 991.98px) {
@@ -2751,6 +2764,11 @@ textarea.input {
 @media (max-width: 767.98px) {
   .news {
     padding: 35px 0 30px 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .news {
+    padding: 15px 0 30px 0;
   }
 }
 .news__row {
@@ -2792,6 +2810,12 @@ textarea.input {
     margin: 0px 0px 30px 0px;
   }
 }
+@media (max-width: 479.98px) {
+  .news__title {
+    display: none;
+  }
+}
+
 .item-news__row {
   display: flex;
 }
@@ -2903,6 +2927,7 @@ textarea.input {
 .way {
   padding: 127px 0 110px 0;
   position: relative;
+  z-index: 3;
 }
 @media (max-width: 991.98px) {
   .way {
@@ -2996,7 +3021,7 @@ textarea.input {
 .hero-road {
   padding: 10px 0;
   height: 660px;
-  background: url("../img/road-transportation/hero/bg.jpg") 0 0 / cover no-repeat;
+  background: url("../img/road-transportation/hero/bg.jpg") 0 0/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-road {
@@ -3501,13 +3526,13 @@ textarea.input {
 }
 
 .advantages_road-transportation {
-  background: url("../../img/road-transportation/advantages/bg.jpg") 0 0 / cover no-repeat;
+  background: url("../img/road-transportation/advantages/bg.jpg") 0 0/cover no-repeat;
 }
 
 .hero-air {
   padding: 10px 0;
   height: 660px;
-  background: url("../img/air-transportation/hero/bg.jpg") 0 0 / cover no-repeat;
+  background: url("../img/air-transportation/hero/bg.jpg") 0 0/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-air {
@@ -3677,7 +3702,7 @@ textarea.input {
 .text-block {
   color: #002445;
   padding: 105px 0 102px 40px;
-  background: url("../img/air-transportation/text-block/bg.jpg") 0 0 / cover no-repeat fixed;
+  background: url("../img/air-transportation/text-block/bg.jpg") 0 0/cover no-repeat fixed;
   position: relative;
 }
 @media (max-width: 1302px) {
@@ -3712,10 +3737,11 @@ textarea.input {
   height: 100%;
 }
 .text-block__title {
+  font-family: "Bebas Neue";
   position: relative;
   z-index: 2;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 30px;
   color: #002445;
   margin: 0px 0px 10px 0px;
   text-transform: uppercase;
@@ -3928,7 +3954,7 @@ textarea.input {
 .hero-services {
   padding: 50px 0;
   height: 660px;
-  background: url("../img/services/hero/BG.jpg") 0 0 / cover no-repeat;
+  background: url("../img/services/hero/BG.jpg") 0 0/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-services {
@@ -5221,7 +5247,7 @@ textarea.input {
 .hero-about {
   padding: 10px 0 0 0;
   height: 812px;
-  background: url("../img/about/hero/BG.jpg") 0 0 / cover no-repeat;
+  background: url("../img/about/hero/BG.jpg") 0 0/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-about {
@@ -6276,15 +6302,11 @@ textarea.input {
 .bottom-form-applic .input_001 {
   padding: 11.5px 15px 11.5px 45px;
 }
-.bottom-form-applic .input_1,
-.bottom-form-applic .input_2,
-.bottom-form-applic .input_3 {
+.bottom-form-applic .input_1, .bottom-form-applic .input_2, .bottom-form-applic .input_3 {
   padding: 11.5px 15px 11.5px 37px;
 }
 @media (max-width: 991.98px) {
-  .bottom-form-applic .input_1,
-  .bottom-form-applic .input_2,
-  .bottom-form-applic .input_3 {
+  .bottom-form-applic .input_1, .bottom-form-applic .input_2, .bottom-form-applic .input_3 {
     padding: 11.5px 15px 11.5px 45px;
   }
 }
@@ -6933,7 +6955,7 @@ textarea.input {
 .track-page {
   padding: 24px 0 50px 0;
   min-height: 580px;
-  background: url("../img/track/bg.jpg") 0 0 / cover no-repeat;
+  background: url("../img/track/bg.jpg") 0 0/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .track-page {
@@ -7064,7 +7086,7 @@ textarea.input {
 .contacts-page {
   min-height: 680px;
   padding: 11px 0 0 0;
-  background: url("../img/contacts/BG.jpg") 0 0 / cover no-repeat;
+  background: url("../img/contacts/BG.jpg") 0 0/cover no-repeat;
 }
 @media (max-width: 767.98px) {
   .contacts-page {
