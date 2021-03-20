@@ -800,9 +800,11 @@ $(document).ready(function () {
 	menu.addEventListener('click', (e) => {
 		if (window.innerWidth < 992 && e.target.nextElementSibling.classList.contains("sub-menu")) {
 			if (e.target.nextElementSibling.classList.contains("active")) {
+				e.target.classList.remove("active");
 				e.target.nextElementSibling.classList.remove("active");
 				e.target.nextElementSibling.style.display = "None";
 			} else {
+				e.target.classList.add("active");
 				e.target.nextElementSibling.classList.add("active");
 				e.target.nextElementSibling.style.display = "block";
 			}
