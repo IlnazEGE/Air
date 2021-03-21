@@ -391,7 +391,7 @@ textarea.input {
 }
 @media (max-width: 767.98px) {
   .title {
-    font-size: 42px;
+    font-size: 40px;
   }
 }
 @media (max-width: 479.98px) {
@@ -1901,7 +1901,7 @@ textarea.input {
   background: url("../img/icons/slider-arrow-l-h.svg") 0 0 no-repeat;
 }
 .hero .swiper-slide {
-  background: url("../img/index/hero/BG.jpg") 0 0/cover no-repeat;
+  background: url("../img/index/hero/BG.jpg") 50% 50%/cover no-repeat;
   padding: 90px 0 50px 0;
   min-height: 700px;
 }
@@ -2435,7 +2435,7 @@ textarea.input {
 }
 
 .advantages {
-  background: url("../img/index/advantages/bg.jpg") bottom left/cover no-repeat;
+  background: url("../img/index/advantages/bg.jpg") 50% 50%/cover no-repeat;
   padding: 30px 0 0 0;
 }
 @media (max-width: 991.98px) {
@@ -2660,7 +2660,7 @@ textarea.input {
 }
 @media (max-width: 479.98px) {
   .about {
-    padding: 20px 0;
+    display: none;
   }
 }
 .about .container {
@@ -2672,11 +2672,6 @@ textarea.input {
 @media (max-width: 767.98px) {
   .about__title {
     margin: 0px 0px 20px 0px;
-  }
-}
-@media (max-width: 479.98px) {
-  .about__title {
-    display: none;
   }
 }
 .about__text {
@@ -2858,7 +2853,7 @@ textarea.input {
 }
 @media (max-width: 479.98px) {
   .news {
-    padding: 15px 0 30px 0;
+    display: none;
   }
 }
 .news__row {
@@ -3115,7 +3110,7 @@ textarea.input {
 .hero-road {
   padding: 10px 0;
   height: 660px;
-  background: url("../img/road-transportation/hero/bg.jpg") 0 0/cover no-repeat;
+  background: url("../img/road-transportation/hero/bg.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-road {
@@ -3620,13 +3615,13 @@ textarea.input {
 }
 
 .advantages_road-transportation {
-  background: url("../img/road-transportation/advantages/bg.jpg") 0 0/cover no-repeat;
+  background: url("../img/road-transportation/advantages/bg.jpg") 50% 50%/cover no-repeat;
 }
 
 .hero-air {
   padding: 10px 0;
   height: 660px;
-  background: url("../img/air-transportation/hero/bg.jpg") 0 0/cover no-repeat;
+  background: url("../img/air-transportation/hero/bg.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-air {
@@ -3796,7 +3791,7 @@ textarea.input {
 .text-block {
   color: #002445;
   padding: 105px 0 102px 40px;
-  background: url("../img/air-transportation/text-block/bg.jpg") 0 0/cover no-repeat fixed;
+  background: url("../img/air-transportation/text-block/bg.jpg") 50% 50%/cover no-repeat fixed;
   position: relative;
 }
 @media (max-width: 1302px) {
@@ -3807,18 +3802,18 @@ textarea.input {
 @media (max-width: 991.98px) {
   .text-block {
     padding: 65px 0 65px 0;
-    margin: 170px 0px 0px 0px;
+    margin: 175px 0px 0px 0px;
   }
 }
 @media (max-width: 767.98px) {
   .text-block {
-    padding: 45px 0 45px 0;
+    padding: 30px 0;
   }
 }
 @media (max-width: 479.98px) {
   .text-block {
     padding: 30px 0;
-    margin: 160px 0px 0px 0px;
+    margin: 150px 0px 0px 0px;
   }
 }
 .text-block::after {
@@ -4049,7 +4044,7 @@ textarea.input {
 .hero-services {
   padding: 50px 0;
   height: 660px;
-  background: url("../img/services/hero/BG.jpg") 0 0/cover no-repeat;
+  background: url("../img/services/hero/BG.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-services {
@@ -4107,8 +4102,8 @@ textarea.input {
 }
 @media (max-width: 479.98px) {
   .left-hero-services__title {
-    font-size: 43px;
-    line-height: 46px;
+    font-size: 40px;
+    line-height: 43px;
   }
 }
 .left-hero-services__subtitle {
@@ -4125,14 +4120,19 @@ textarea.input {
 @media (max-width: 991.98px) {
   .left-hero-services__subtitle {
     max-width: 500px;
-    font-size: 33px;
+    font-size: 32px;
     margin: 0 auto 50px auto;
     text-align: center;
   }
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
   .left-hero-services__subtitle {
     font-size: 28px;
+  }
+}
+@media (max-width: 479.98px) {
+  .left-hero-services__subtitle {
+    font-size: 22px;
     margin: 0 auto 30px auto;
   }
 }
@@ -4384,11 +4384,13 @@ textarea.input {
 @media (max-width: 767.98px) {
   .content-schedule__title {
     margin: 0px 0px 15px 0px;
+    font-size: 35px;
   }
 }
 @media (max-width: 479.98px) {
   .content-schedule__title {
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 34px;
     margin: 0px 0px 20px 0px;
   }
 }
@@ -4421,7 +4423,7 @@ textarea.input {
 }
 
 .advantages-services {
-  background: url("../img/services/advantage/bg.jpg") bottom left/cover no-repeat;
+  background: url("../img/services/advantage/bg.jpg") 50% 50%/cover no-repeat;
   padding: 90px 0 0 0;
 }
 @media (max-width: 991.98px) {
@@ -5366,7 +5368,7 @@ textarea.input {
 .hero-about {
   padding: 10px 0 0 0;
   height: 812px;
-  background: url("../img/about/hero/BG.jpg") 0 0/cover no-repeat;
+  background: url("../img/about/hero/BG.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-about {
@@ -6782,7 +6784,7 @@ textarea.input {
 
 .news-page {
   padding: 10px 0 0px 0;
-  background: url("../img/news-page/BG.jpg") 0 0/100% 85% no-repeat;
+  background: url("../img/news-page/BG.jpg") 50% 0%/100% 85% no-repeat;
 }
 @media (max-width: 767.98px) {
   .news-page {
@@ -7086,7 +7088,7 @@ textarea.input {
 .track-page {
   padding: 24px 0 50px 0;
   min-height: 580px;
-  background: url("../img/track/bg.jpg") 0 0/cover no-repeat;
+  background: url("../img/track/bg.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .track-page {
@@ -7237,7 +7239,7 @@ textarea.input {
 .contacts-page {
   min-height: 680px;
   padding: 11px 0 0 0;
-  background: url("../img/contacts/BG.jpg") 0 0/cover no-repeat;
+  background: url("../img/contacts/BG.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 767.98px) {
   .contacts-page {
