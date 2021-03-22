@@ -2641,21 +2641,21 @@ textarea.input {
 }
 
 .about {
-  padding: 75px 0 150px 0;
+  padding: 75px 0;
 }
 @media (max-width: 1302px) {
   .about {
-    padding: 75px 0 100px 0;
+    padding: 75px 0;
   }
 }
 @media (max-width: 991.98px) {
   .about {
-    padding: 65px 0 80px;
+    padding: 65px 0 40px 0;
   }
 }
 @media (max-width: 767.98px) {
   .about {
-    padding: 45px 0 50px 0;
+    padding: 45px 0 40px 0;
   }
 }
 @media (max-width: 479.98px) {
@@ -2664,7 +2664,8 @@ textarea.input {
   }
 }
 .about .container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .about__title {
   margin: 0px 0px 34px 0px;
@@ -2674,8 +2675,27 @@ textarea.input {
     margin: 0px 0px 20px 0px;
   }
 }
+.about__video {
+  margin: 35px 0px 0px 0px;
+  background-color: #343434;
+  height: 550px;
+}
+@media (max-width: 991.98px) {
+  .about__video {
+    height: 380px;
+  }
+}
+@media (max-width: 767.98px) {
+  .about__video {
+    height: 310px;
+  }
+}
+.about__video iframe,
+.about__video video {
+  width: 100%;
+  height: 100%;
+}
 .about__text {
-  max-width: 740px;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -2684,12 +2704,12 @@ textarea.input {
 .about__text p:not(:last-child) {
   margin: 0px 0px 50px 0px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .about__text p:not(:last-child) {
-    margin: 0px 0px 25px 0px;
+    margin: 0px 0px 30px 0px;
   }
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
   .about__text p:not(:last-child) {
     margin: 0px 0px 15px 0px;
   }
@@ -2699,51 +2719,18 @@ textarea.input {
     margin: 0px 0px 20px 0px;
   }
 }
+@media (max-width: 991.98px) {
+  .about__text {
+    margin: 0px 0px 10px 0px;
+  }
+}
 @media (max-width: 767.98px) {
   .about__text {
     font-size: 15px;
     line-height: 22px;
+    margin: 0px 0px 0px 0px;
   }
 }
-@media (max-width: 479.98px) {
-  .about__text {
-    font-size: 14px;
-    line-height: 23px;
-  }
-}
-.about__image {
-  position: absolute;
-  z-index: -1;
-  right: -185px;
-  bottom: -160px;
-}
-@media (max-width: 1700px) {
-  .about__image {
-    right: -110px;
-  }
-}
-@media (max-width: 1500px) {
-  .about__image {
-    right: -25px;
-  }
-}
-@media (max-width: 1302px) {
-  .about__image {
-    position: static;
-    text-align: center;
-  }
-}
-@media (max-width: 991.98px) {
-  .about__image img {
-    width: 100%;
-  }
-}
-@media (max-width: 479.98px) {
-  .about__image {
-    display: none;
-  }
-}
-
 .partners {
   padding: 155px 0;
 }
