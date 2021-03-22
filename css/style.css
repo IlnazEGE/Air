@@ -2732,16 +2732,16 @@ textarea.input {
   }
 }
 .partners {
-  padding: 155px 0;
+  padding: 75px 0 155px 0;
 }
 @media (max-width: 1302px) {
   .partners {
-    padding: 60px 0 155px 0;
+    padding: 50px 0 155px 0;
   }
 }
 @media (max-width: 991.98px) {
   .partners {
-    padding: 50px 0 100px 0;
+    padding: 40px 0 100px 0;
   }
 }
 @media (max-width: 767.98px) {
