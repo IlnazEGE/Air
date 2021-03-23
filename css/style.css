@@ -2731,6 +2731,7 @@ textarea.input {
     margin: 0px 0px 0px 0px;
   }
 }
+
 .partners {
   padding: 75px 0 155px 0;
 }
@@ -5604,14 +5605,19 @@ textarea.input {
 .advantages-slide__small-icon {
   margin: 0px 0px 62px 0px;
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .advantages-slide__small-icon {
     margin: 0px 0px 40px 0px;
   }
 }
-@media (max-width: 479.98px) {
+@media (max-width: 767.98px) {
   .advantages-slide__small-icon {
     margin: 0px 0px 30px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .advantages-slide__small-icon {
+    margin: 0px 0px 20px 0px;
   }
 }
 .advantages-slide__title {
