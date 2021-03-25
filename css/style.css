@@ -2677,17 +2677,16 @@ textarea.input {
 }
 .about__video {
   margin: 35px 0px 0px 0px;
-  background-color: #343434;
-  height: 550px;
+  min-height: 550px;
 }
 @media (max-width: 991.98px) {
   .about__video {
-    height: 380px;
+    min-height: 380px;
   }
 }
 @media (max-width: 767.98px) {
   .about__video {
-    height: 310px;
+    min-height: 310px;
   }
 }
 .about__video iframe,
@@ -4240,7 +4239,17 @@ textarea.input {
 @media (max-width: 479.98px) {
   .form-hero-services {
     width: auto;
-    padding: 30px 20px 13px 20px;
+    padding: 30px 14px 13px 14px;
+  }
+}
+@media (max-width: 400px) {
+  .form-hero-services {
+    padding: 30px 12px 13px 12px;
+  }
+}
+@media (max-width: 355px) {
+  .form-hero-services {
+    padding: 30px 9.5px 13px 9.5px;
   }
 }
 .form-hero-services .input {
@@ -4253,7 +4262,26 @@ textarea.input {
 }
 @media (max-width: 479.98px) {
   .form-hero-services .input {
-    padding: 14px 19px;
+    padding: 14px 18px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 440px) {
+  .form-hero-services .input {
+    padding: 14px 15px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 400px) {
+  .form-hero-services .input {
+    padding: 14px 10.5px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 350px) {
+  .form-hero-services .input {
+    padding: 14px 8.5px;
+    font-size: 11px;
   }
 }
 .form-hero-services__title {
@@ -4315,12 +4343,12 @@ textarea.input {
 }
 @media (max-width: 500px) {
   .schedule {
-    padding: 380px 0 35px 0;
+    padding: 370px 0 35px 0;
   }
 }
 @media (max-width: 479.98px) {
   .schedule {
-    padding: 275px 0 30px 0;
+    padding: 260px 0 30px 0;
   }
 }
 .schedule__breadcrubs {
@@ -4790,6 +4818,18 @@ textarea.input {
   color: #002c57;
   text-align: left;
 }
+@media (max-width: 767.98px) {
+  .table-price__title {
+    font-size: 23px;
+  }
+}
+@media (max-width: 479.98px) {
+  .table-price__title {
+    text-align: center;
+    margin: 0 0 15px 0;
+    font-size: 21px;
+  }
+}
 .table-price__row {
   border: 2px solid #a7c2db;
 }
@@ -4920,12 +4960,12 @@ textarea.input {
 @media (max-width: 767.98px) {
   .office__title {
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 @media (max-width: 479.98px) {
   .office__title {
-    font-size: 35px;
+    font-size: 27px;
     margin: 0px 0px 10px 0px;
   }
 }
@@ -6677,6 +6717,16 @@ textarea.input {
   font-size: 30px;
   letter-spacing: 0.05em;
   margin: 0 0 30px 7px;
+}
+@media (max-width: 767.98px) {
+  .price_news-item .table-price__title {
+    font-size: 27px;
+  }
+}
+@media (max-width: 479.98px) {
+  .price_news-item .table-price__title {
+    font-size: 23px;
+  }
 }
 
 .pagging-news-item {
