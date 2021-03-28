@@ -4,7 +4,8 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeueBold.eot");
-  src: local("☺"), url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg") format("svg");
+  src: local("☺"), url("../fonts/BebasNeueBold.woff") format("woff"),
+    url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -569,7 +570,8 @@ textarea.input {
     padding: 15px 12px;
   }
 }
-.popup-callback .popup-content__ch, .popup-callback .popup-content__ch a {
+.popup-callback .popup-content__ch,
+.popup-callback .popup-content__ch a {
   font-size: 14px;
   line-height: 17px;
   color: #002445;
@@ -1034,6 +1036,11 @@ textarea.input {
   }
   .bottom-center-header__menu.active {
     left: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .bottom-center-header__menu {
+    padding: 25px 25px 150px 25px;
   }
 }
 @media (max-height: 450px) and (max-width: 991.98px) {
@@ -1858,13 +1865,13 @@ textarea.input {
 }
 @media (max-width: 1302px) {
   .hero .swiper-button-prev,
-.hero .swiper-button-next {
+  .hero .swiper-button-next {
     top: 90%;
   }
 }
 @media (max-width: 991.98px) {
   .hero .swiper-button-prev,
-.hero .swiper-button-next {
+  .hero .swiper-button-next {
     display: none;
   }
 }
@@ -1901,7 +1908,7 @@ textarea.input {
   background: url("../img/icons/slider-arrow-l-h.svg") 0 0 no-repeat;
 }
 .hero .swiper-slide {
-  background: url("../img/index/hero/BG.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/index/hero/BG.jpg") 50% 50% / cover no-repeat;
   padding: 90px 0 50px 0;
   min-height: 700px;
 }
@@ -2413,7 +2420,7 @@ textarea.input {
 }
 @media (min-width: 991.98px) {
   .item-services__text p:hover,
-.item-services__text a:hover {
+  .item-services__text a:hover {
     color: #e10000;
   }
 }
@@ -2435,7 +2442,7 @@ textarea.input {
 }
 
 .advantages {
-  background: url("../img/index/advantages/bg.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/index/advantages/bg.jpg") 50% 50% / cover no-repeat;
   padding: 30px 0 0 0;
 }
 @media (max-width: 991.98px) {
@@ -2732,11 +2739,11 @@ textarea.input {
 }
 
 .partners {
-  padding: 75px 0 155px 0;
+  padding: 40px 0 115px 0;
 }
 @media (max-width: 1302px) {
   .partners {
-    padding: 50px 0 155px 0;
+    padding: 50px 0 130px 0;
   }
 }
 @media (max-width: 991.98px) {
@@ -3097,7 +3104,7 @@ textarea.input {
 .hero-road {
   padding: 10px 0;
   height: 660px;
-  background: url("../img/road-transportation/hero/bg.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/road-transportation/hero/bg.jpg") 50% 50% / cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-road {
@@ -3602,13 +3609,13 @@ textarea.input {
 }
 
 .advantages_road-transportation {
-  background: url("../img/road-transportation/advantages/bg.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/road-transportation/advantages/bg.jpg") 50% 50% / cover no-repeat;
 }
 
 .hero-air {
   padding: 10px 0;
   height: 660px;
-  background: url("../img/air-transportation/hero/bg.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/air-transportation/hero/bg.jpg") 50% 50% / cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-air {
@@ -3778,7 +3785,7 @@ textarea.input {
 .text-block {
   color: #002445;
   padding: 105px 0 102px 40px;
-  background: url("../img/air-transportation/text-block/bg.jpg") 50% 50%/cover no-repeat fixed;
+  background: url("../img/air-transportation/text-block/bg.jpg") 50% 50% / cover no-repeat fixed;
   position: relative;
 }
 @media (max-width: 1302px) {
@@ -4031,7 +4038,7 @@ textarea.input {
 .hero-services {
   padding: 50px 0;
   height: 660px;
-  background: url("../img/services/hero/BG.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/services/hero/BG.jpg") 50% 50% / cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-services {
@@ -4439,7 +4446,7 @@ textarea.input {
 }
 
 .advantages-services {
-  background: url("../img/services/advantage/bg.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/services/advantage/bg.jpg") 50% 50% / cover no-repeat;
   padding: 90px 0 0 0;
 }
 @media (max-width: 991.98px) {
@@ -5396,7 +5403,7 @@ textarea.input {
 .hero-about {
   padding: 10px 0 0 0;
   height: 812px;
-  background: url("../img/about/hero/BG.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/about/hero/BG.jpg") 50% 50% / cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-about {
@@ -6468,11 +6475,15 @@ textarea.input {
 .bottom-form-applic .input_001 {
   padding: 11.5px 15px 11.5px 45px;
 }
-.bottom-form-applic .input_1, .bottom-form-applic .input_2, .bottom-form-applic .input_3 {
+.bottom-form-applic .input_1,
+.bottom-form-applic .input_2,
+.bottom-form-applic .input_3 {
   padding: 11.5px 15px 11.5px 37px;
 }
 @media (max-width: 991.98px) {
-  .bottom-form-applic .input_1, .bottom-form-applic .input_2, .bottom-form-applic .input_3 {
+  .bottom-form-applic .input_1,
+  .bottom-form-applic .input_2,
+  .bottom-form-applic .input_3 {
     padding: 11.5px 15px 11.5px 45px;
   }
 }
@@ -7131,7 +7142,7 @@ textarea.input {
 .track-page {
   padding: 24px 0 50px 0;
   min-height: 580px;
-  background: url("../img/track/bg.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/track/bg.jpg") 50% 50% / cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .track-page {
@@ -7282,7 +7293,7 @@ textarea.input {
 .contacts-page {
   min-height: 680px;
   padding: 11px 0 0 0;
-  background: url("../img/contacts/BG.jpg") 50% 50%/cover no-repeat;
+  background: url("../img/contacts/BG.jpg") 50% 50% / cover no-repeat;
 }
 @media (max-width: 767.98px) {
   .contacts-page {
