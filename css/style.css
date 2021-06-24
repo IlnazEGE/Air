@@ -4,8 +4,7 @@
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeueBold.eot");
-  src: local("☺"), url("../fonts/BebasNeueBold.woff") format("woff"),
-    url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg") format("svg");
+  src: local("☺"), url("../fonts/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeueBold.ttf") format("truetype"), url("../fonts/BebasNeueBold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
@@ -570,8 +569,7 @@ textarea.input {
     padding: 15px 12px;
   }
 }
-.popup-callback .popup-content__ch,
-.popup-callback .popup-content__ch a {
+.popup-callback .popup-content__ch, .popup-callback .popup-content__ch a {
   font-size: 14px;
   line-height: 17px;
   color: #002445;
@@ -1851,6 +1849,275 @@ textarea.input {
   color: #002445;
 }
 
+.text-containыer {
+  margin: 100px auto 0px auto;
+}
+.text-containыer h1 {
+  font-weight: 700;
+  font-size: 60px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #002c57;
+  margin: 18px 0px;
+}
+@media (max-width: 991.98px) {
+  .text-containыer h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .text-containыer h1 {
+    font-size: 40px;
+    margin: 14px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .text-containыer h1 {
+    font-size: 30px;
+    margin: 9px 0px;
+  }
+}
+.text-containыer h2 {
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #002c57;
+  margin: 13px 0px;
+}
+@media (max-width: 991.98px) {
+  .text-containыer h2 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 767.98px) {
+  .text-containыer h2 {
+    font-size: 35px;
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .text-containыer h2 {
+    font-size: 27px;
+    margin: 6px 0px;
+  }
+}
+.text-containыer h3 {
+  font-weight: 700;
+  font-size: 45px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #002c57;
+  margin: 10px 0px;
+}
+@media (max-width: 991.98px) {
+  .text-containыer h3 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .text-containыer h3 {
+    font-size: 32px;
+    margin: 8px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .text-containыer h3 {
+    font-size: 24px;
+    margin: 5px 0px;
+  }
+}
+.text-containыer h4 {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #002c57;
+  margin: 8px 0px;
+}
+@media (max-width: 991.98px) {
+  .text-containыer h4 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 767.98px) {
+  .text-containыer h4 {
+    font-size: 29px;
+    margin: 6px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .text-containыer h4 {
+    font-size: 21px;
+    margin: 4px 0px;
+  }
+}
+.text-containыer h5 {
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #002c57;
+  margin: 6px 0px;
+}
+@media (max-width: 991.98px) {
+  .text-containыer h5 {
+    font-size: 31px;
+  }
+}
+@media (max-width: 767.98px) {
+  .text-containыer h5 {
+    font-size: 25px;
+    margin: 4px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .text-containыer h5 {
+    font-size: 18px;
+    margin: 2px 0px;
+  }
+}
+.text-containыer h6 {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #002c57;
+  margin: 4px 0px;
+}
+@media (max-width: 991.98px) {
+  .text-containыer h6 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 767.98px) {
+  .text-containыer h6 {
+    font-size: 22px;
+    margin: 3px 0px;
+  }
+}
+@media (max-width: 479.98px) {
+  .text-containыer h6 {
+    font-size: 17px;
+    margin: 1px 0px;
+  }
+}
+.text-containыer p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #002445;
+  margin: 10px 0;
+}
+@media (max-width: 991.98px) {
+  .text-containыer p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 479.98px) {
+  .text-containыer p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 6px 0;
+  }
+}
+.text-containыer span {
+  color: #0085ff;
+}
+.text-containыer ul {
+  margin: 18px 0;
+}
+@media (max-width: 767.98px) {
+  .text-containыer ul {
+    margin: 13px 0;
+  }
+}
+.text-containыer ul li {
+  padding: 0px 0px 0px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #002445;
+  position: relative;
+}
+@media (max-width: 479.98px) {
+  .text-containыer ul li {
+    font-size: 15px;
+  }
+}
+.text-containыer ul li:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+.text-containыer ul li::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -8px;
+  width: 26px;
+  height: 31px;
+  background: url("../img/road-transportation/transport/loc.svg") 0 0 no-repeat;
+}
+.text-containыer ol {
+  margin: 18px 0;
+}
+@media (max-width: 767.98px) {
+  .text-containыer ol {
+    margin: 13px 0;
+  }
+}
+.text-containыer ol li {
+  margin: 0px 0px 0px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #002445;
+}
+@media (max-width: 479.98px) {
+  .text-containыer ol li {
+    font-size: 15px;
+  }
+}
+.text-containыer ol li:not(:last-child) {
+  margin: 0px 0px 15px 20px;
+}
+.text-containыer a {
+  font-weight: 700;
+  color: #002445;
+  margin: 16px 0px 0px 0px;
+  font-size: 15px;
+}
+@media (max-width: 479.98px) {
+  .text-containыer a {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+.text-containыer table {
+  border-collapse: collapse;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #002445;
+  font-family: Montserrat;
+}
+@media (max-width: 479.98px) {
+  .text-containыer table {
+    font-size: 15px;
+  }
+}
+.text-containыer table tr {
+  border: 2px solid #a7c2db;
+}
+.text-containыer table th {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 4px 6px;
+}
+.text-containыer table td {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 4px 6px;
+}
+
 .hero {
   position: relative;
 }
@@ -1865,13 +2132,13 @@ textarea.input {
 }
 @media (max-width: 1302px) {
   .hero .swiper-button-prev,
-  .hero .swiper-button-next {
+.hero .swiper-button-next {
     top: 90%;
   }
 }
 @media (max-width: 991.98px) {
   .hero .swiper-button-prev,
-  .hero .swiper-button-next {
+.hero .swiper-button-next {
     display: none;
   }
 }
@@ -1908,9 +2175,19 @@ textarea.input {
   background: url("../img/icons/slider-arrow-l-h.svg") 0 0 no-repeat;
 }
 .hero .swiper-slide {
-  background: url("../img/index/hero/BG.jpg") 50% 50% / cover no-repeat;
   padding: 90px 0 50px 0;
   min-height: 700px;
+}
+.hero .swiper-slide_1 {
+  background: url("../img/index/hero/BG.jpg") 50% 50%/cover no-repeat;
+}
+.hero .swiper-slide_2 {
+  background: url("../img/index/hero/BG1.jpg") 50% 50%/cover no-repeat;
+}
+@media (max-width: 767.98px) {
+  .hero .swiper-slide_2 {
+    background: url("../img/index/hero/BG3.jpg") 50% 50%/cover no-repeat;
+  }
 }
 @media (max-width: 1302px) {
   .hero .swiper-slide {
@@ -2420,7 +2697,7 @@ textarea.input {
 }
 @media (min-width: 991.98px) {
   .item-services__text p:hover,
-  .item-services__text a:hover {
+.item-services__text a:hover {
     color: #e10000;
   }
 }
@@ -2442,7 +2719,7 @@ textarea.input {
 }
 
 .advantages {
-  background: url("../img/index/advantages/bg.jpg") 50% 50% / cover no-repeat;
+  background: url("../img/index/advantages/bg.jpg") 50% 50%/cover no-repeat;
   padding: 30px 0 0 0;
 }
 @media (max-width: 991.98px) {
@@ -3104,7 +3381,7 @@ textarea.input {
 .hero-road {
   padding: 10px 0;
   height: 660px;
-  background: url("../img/road-transportation/hero/bg.jpg") 50% 50% / cover no-repeat;
+  background: url("../img/road-transportation/hero/bg.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-road {
@@ -3609,13 +3886,13 @@ textarea.input {
 }
 
 .advantages_road-transportation {
-  background: url("../img/road-transportation/advantages/bg.jpg") 50% 50% / cover no-repeat;
+  background: url("../img/road-transportation/advantages/bg.jpg") 50% 50%/cover no-repeat;
 }
 
 .hero-air {
   padding: 10px 0;
   height: 660px;
-  background: url("../img/air-transportation/hero/bg.jpg") 50% 50% / cover no-repeat;
+  background: url("../img/air-transportation/hero/bg.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-air {
@@ -3785,7 +4062,7 @@ textarea.input {
 .text-block {
   color: #002445;
   padding: 105px 0 102px 40px;
-  background: url("../img/air-transportation/text-block/bg.jpg") 50% 50% / cover no-repeat fixed;
+  background: url("../img/air-transportation/text-block/bg.jpg") 50% 50%/cover no-repeat fixed;
   position: relative;
 }
 @media (max-width: 1302px) {
@@ -4035,10 +4312,98 @@ textarea.input {
   }
 }
 
+/* NEW SECTION*/
+.documents {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.44) 0%, rgba(167, 194, 219, 0.44) 100%);
+  padding: 40px 0px 70px 0px;
+}
+@media (max-width: 991.98px) {
+  .documents {
+    padding: 40px 0 50px 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .documents {
+    padding: 40px 0 30px 0;
+  }
+}
+.documents__title {
+  text-align: center;
+  margin: 0px 0px 60px 0px;
+}
+@media (max-width: 479.98px) {
+  .documents__title {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.documents__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -70px;
+}
+@media (max-width: 1302px) {
+  .documents__list {
+    margin: 0;
+  }
+}
+.documents__item {
+  flex: 0 1 50%;
+  padding: 0 70px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0px 0px 25px 0px;
+}
+@media (max-width: 1302px) {
+  .documents__item {
+    padding: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .documents__item {
+    flex: 0 1 100%;
+    text-align: center;
+    font-size: 17px;
+  }
+}
+@media (max-width: 479.98px) {
+  .documents__item {
+    font-size: 15px;
+    margin: 0px 0px 17px 0px;
+  }
+}
+.documents__item a {
+  padding: 0px 0px 0px 45px;
+  position: relative;
+  color: #002c57;
+}
+@media (max-width: 991.98px) {
+  .documents__item a {
+    padding: 0;
+  }
+}
+.documents__item a:hover {
+  text-decoration: underline;
+}
+.documents__item a::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  width: 33px;
+  height: 35px;
+  left: 0;
+  background: url("../img/documents.svg") 0 0 no-repeat;
+}
+@media (max-width: 991.98px) {
+  .documents__item a::after {
+    display: none;
+  }
+}
+
 .hero-services {
   padding: 50px 0;
   height: 660px;
-  background: url("../img/services/hero/BG.jpg") 50% 50% / cover no-repeat;
+  background: url("../img/services/hero/BG.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-services {
@@ -4446,7 +4811,7 @@ textarea.input {
 }
 
 .advantages-services {
-  background: url("../img/services/advantage/bg.jpg") 50% 50% / cover no-repeat;
+  background: url("../img/services/advantage/bg.jpg") 50% 50%/cover no-repeat;
   padding: 90px 0 0 0;
 }
 @media (max-width: 991.98px) {
@@ -5403,7 +5768,7 @@ textarea.input {
 .hero-about {
   padding: 10px 0 0 0;
   height: 812px;
-  background: url("../img/about/hero/BG.jpg") 50% 50% / cover no-repeat;
+  background: url("../img/about/hero/BG.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .hero-about {
@@ -6475,15 +6840,11 @@ textarea.input {
 .bottom-form-applic .input_001 {
   padding: 11.5px 15px 11.5px 45px;
 }
-.bottom-form-applic .input_1,
-.bottom-form-applic .input_2,
-.bottom-form-applic .input_3 {
+.bottom-form-applic .input_1, .bottom-form-applic .input_2, .bottom-form-applic .input_3 {
   padding: 11.5px 15px 11.5px 37px;
 }
 @media (max-width: 991.98px) {
-  .bottom-form-applic .input_1,
-  .bottom-form-applic .input_2,
-  .bottom-form-applic .input_3 {
+  .bottom-form-applic .input_1, .bottom-form-applic .input_2, .bottom-form-applic .input_3 {
     padding: 11.5px 15px 11.5px 45px;
   }
 }
@@ -7142,7 +7503,7 @@ textarea.input {
 .track-page {
   padding: 24px 0 50px 0;
   min-height: 580px;
-  background: url("../img/track/bg.jpg") 50% 50% / cover no-repeat;
+  background: url("../img/track/bg.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 991.98px) {
   .track-page {
@@ -7293,7 +7654,7 @@ textarea.input {
 .contacts-page {
   min-height: 680px;
   padding: 11px 0 0 0;
-  background: url("../img/contacts/BG.jpg") 50% 50% / cover no-repeat;
+  background: url("../img/contacts/BG.jpg") 50% 50%/cover no-repeat;
 }
 @media (max-width: 767.98px) {
   .contacts-page {
